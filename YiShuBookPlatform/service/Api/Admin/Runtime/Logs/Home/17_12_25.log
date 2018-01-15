@@ -1,0 +1,90 @@
+[ 2017-12-25T16:59:41+08:00 ] ::1 /thinkphp_3.2.3_full/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.211403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.103261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.103336s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.022686s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.022750s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.177235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.177289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013857s ]
+
+[ 2017-12-25T17:01:36+08:00 ] ::1 /thinkphp_3.2.3_full/admin.php/Home/navtop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `navtop` [ RunTime:0.0682s ]
+SQL: SELECT * FROM `navtop` WHERE ( tid = 0 ) ORDER BY sort ASC  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `navtop` WHERE ( tid != 0 ) ORDER BY sort ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2017-12-25T17:01:39+08:00 ] ::1 /thinkphp_3.2.3_full/admin.php/Home/article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.1456s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0330s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\xampp\htdocs\thinkphp_3.2.3_full\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `article` ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Use of undefined constant pic - assumed 'pic' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 71 行.
+NOTIC: [8] Use of undefined constant commend - assumed 'commend' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 75 行.
+NOTIC: [8] Use of undefined constant choice - assumed 'choice' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 76 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 77 行.
+NOTIC: [8] Undefined index: name D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 77 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 78 行.
+NOTIC: [8] Use of undefined constant pic - assumed 'pic' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 71 行.
+NOTIC: [8] Use of undefined constant commend - assumed 'commend' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 75 行.
+NOTIC: [8] Use of undefined constant choice - assumed 'choice' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 76 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 77 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 78 行.
+NOTIC: [8] Use of undefined constant pic - assumed 'pic' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 71 行.
+NOTIC: [8] Use of undefined constant commend - assumed 'commend' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 75 行.
+NOTIC: [8] Use of undefined constant choice - assumed 'choice' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 76 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 77 行.
+NOTIC: [8] Undefined index: name D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 77 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 78 行.
+NOTIC: [8] Use of undefined constant pic - assumed 'pic' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 71 行.
+NOTIC: [8] Use of undefined constant commend - assumed 'commend' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 75 行.
+NOTIC: [8] Use of undefined constant choice - assumed 'choice' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 76 行.
+NOTIC: [8] Use of undefined constant tid - assumed 'tid' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 77 行.
+NOTIC: [8] Undefined index: name D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 77 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' D:\xampp\htdocs\thinkphp_3.2.3_full\Admin\Runtime\Cache\Home\0af49e14f553ba13f7b5d71d0440d4b3.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+

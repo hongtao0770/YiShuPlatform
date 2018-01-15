@@ -1,0 +1,111 @@
+<include file="Public:header"/>
+<div class="aright">
+
+    <fieldset class="layui-elem-field layui-field-title" style="margin: 20px 30px 20px 20px;">
+        <legend>修改图书</legend>
+    </fieldset>
+    <form class="layui-form bform"  onsubmit="return false" enctype="multipart/form-data" id="form1">
+        <input type="hidden" name="activityid" value="{$list.activityid}">
+        <div class="layui-form-item">
+            <label class="layui-form-label">活动名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="activityname" value="{$list.activityname}" placeholder="必填内容" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">活动日期</label>
+            <div class="layui-input-block">
+                <input type="date" name="activitydate" value="{$list.activitydate}" placeholder="必填内容" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">活动地点</label>
+            <div class="layui-input-block">
+                <input type="text" name="activityaddress" value="{$list.activityaddress}" placeholder="必填内容" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">活动内容</label>
+            <div class="layui-input-block">
+                <input type="text" name="activitycontent" value="{$list.activitycontent}" placeholder="必填内容" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">联系方式</label>
+            <div class="layui-input-block">
+                <input type="text" name="activitylink" value="{$list.activitylink}" placeholder="必填内容" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">活动海报</label>
+            <div class="layui-input-block">
+                <div class="file-box">
+                    <i class="layui-icon">&#xe61f;</i>
+                    <input class="file-btn" type="button" value="选择图片">
+                    <input class="file-txt" type="text" autocomplete="off" name="textfield" id="textfield"><if condition="$list[activityposter] neq ''"><img src="__ROOT__/Uploads{$list.activityposter}" height="50"><else/></if>
+                    <input class="file-file" type="file" name="activityposter" id="activityposter" size="28" onchange="document.getElementById('textfield').value=this.value" />
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" onclick="edit()" lay-filter="formDemo"  style="background-color:#393D49 ">立即提交</button>
+                <button class="layui-btn layui-btn-primary" onclick="history.go(-1)">返回</button>
+            </div>
+        </div>
+
+    </form>
+    <script>
+        layui.use('form', function(){
+            var form = layui.form();
+        });
+
+        function edit() {
+
+            layui.use('layer', function () {
+                var loading = layer.load(2, {
+                    shade: [0.2,'#000']
+                });
+
+
+                var data = new FormData($('#form1')[0]);
+                $.ajax({
+                    url: "{:U('Activity/doedit')}",
+                    type: 'POST',
+                    data: data,
+                    dataType: 'json',
+                    async: false,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function (data, status) {
+                        if (data.code == 200) {
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 1, time: 1000}, function () {
+                                location.href = "{:U('Activity/index')}";
+                            });
+                            return false;
+                        } else {
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                        }
+                    },
+
+                    fail: function (err, status) {
+                        console.log(err)
+                    }
+                });
+            });
+        }
+
+    </script>
+</div>
+</div>
+</body>
+</html>

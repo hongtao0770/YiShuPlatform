@@ -1,0 +1,636 @@
+[ 2018-01-07T10:22:40+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_user` WHERE ( phone = '15755320770' ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-01-07T10:23:02+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_user` WHERE ( phone = '15755320770' ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-01-07T10:23:03+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002868s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0006s ]
+
+[ 2018-01-07T10:23:09+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002374s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0006s ]
+
+[ 2018-01-07T10:23:44+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001606s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_user` WHERE ( phone = '15755320770' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-01-07T10:23:45+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001526s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0004s ]
+
+[ 2018-01-07T10:24:53+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_user` WHERE ( phone = '15755320770' ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-01-07T10:24:55+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001989s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0009s ]
+
+[ 2018-01-07T10:25:10+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_user` WHERE ( phone = '15755320770' ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-01-07T10:25:11+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001801s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0005s ]
+
+[ 2018-01-07T10:25:50+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002089s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0005s ]
+
+[ 2018-01-07T10:34:13+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/order/getOrderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_order` WHERE ( userid = '7' )  [ RunTime:0.0005s ]
+
+[ 2018-01-07T10:36:04+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002538s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0008s ]
+
+[ 2018-01-07T10:36:06+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/order/getOrderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `y_order` WHERE ( userid = '7' )  [ RunTime:0.0005s ]
+
+[ 2018-01-07T10:36:33+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001888s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0004s ]
+
+[ 2018-01-07T10:36:36+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/order/getOrderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002620s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_order` WHERE ( userid = '7' )  [ RunTime:0.0003s ]
+
+[ 2018-01-07T10:36:47+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0005s ]
+
+[ 2018-01-07T10:36:48+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/order/getOrderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002705s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_order` WHERE ( userid = '7' )  [ RunTime:0.0006s ]
+
+[ 2018-01-07T10:36:57+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001821s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0003s ]
+
+[ 2018-01-07T10:37:00+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0006s ]
+
+[ 2018-01-07T10:37:01+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/order/getOrderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `y_order` WHERE ( userid = '7' )  [ RunTime:0.0004s ]
+
+[ 2018-01-07T10:37:13+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002071s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0004s ]
+
+[ 2018-01-07T10:37:16+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0004s ]
+
+[ 2018-01-07T10:37:17+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/order/getOrderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `y_order` WHERE ( userid = '7' )  [ RunTime:0.0004s ]
+
+[ 2018-01-07T17:32:03+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001632s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0003s ]
+
+[ 2018-01-07T17:36:22+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002450s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0007s ]
+
+[ 2018-01-07T17:36:39+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002245s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0005s ]
+
+[ 2018-01-07T17:36:41+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/friendCircle/getDynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001661s ]
+SQL: SHOW COLUMNS FROM `y_friend` [ RunTime:0.0011s ]
+SQL: SELECT `id` FROM `y_friend` ORDER BY id DESC  [ RunTime:0.0005s ]
+
+[ 2018-01-07T17:36:41+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/activity/getActivities
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+SQL: SHOW COLUMNS FROM `y_activity` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `y_activity`  [ RunTime:0.0003s ]
+
+[ 2018-01-07T17:36:44+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBooksOnSale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0005s ]
+
+[ 2018-01-07T17:36:44+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getAllBooks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001849s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_book`  [ RunTime:0.0004s ]
+
+[ 2018-01-07T17:36:48+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getOldBooks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002330s ]
+SQL: SHOW COLUMNS FROM `y_oldbook` [ RunTime:0.0008s ]
+SQL: select y_user.nickname,y_oldbook.*from y_user,y_oldbook where y_oldbook.userid = y_user.userid [ RunTime:0.0005s ]
+
+[ 2018-01-07T17:36:51+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBooksOnSale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001921s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0004s ]
+
+[ 2018-01-07T17:36:51+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getAllBooks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003097s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book`  [ RunTime:0.0006s ]
+
+[ 2018-01-07T17:37:27+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003107s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0005s ]
+
+[ 2018-01-07T17:37:30+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getAllBooks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002286s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book`  [ RunTime:0.0005s ]
+
+[ 2018-01-07T17:37:30+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBooksOnSale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004661s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0006s ]
+
+[ 2018-01-07T17:38:55+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home//order/addOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002730s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_user` WHERE ( userid = '7' ) LIMIT 1   [ RunTime:0.0026s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `money`='237' WHERE ( userid = '7' ) [ RunTime:0.0031s ]
+SQL: SELECT * FROM `y_user` WHERE ( userid = '7' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminid = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `y_admin` SET `money`='0.36' WHERE ( adminid = 1 ) [ RunTime:0.0030s ]
+SQL: INSERT INTO `y_order` (`bookName`,`orderPrice`,`sessionDate`,`userId`,`orderAdress`,`orderPic`,`orderstate`) VALUES ('自在独行','23','2018-01-07 17:38','7','安徽信息工程学院文津校区4','/2018-01-01/book3.jpg','0') [ RunTime:0.0034s ]
+
+[ 2018-01-07T17:38:56+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002779s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0008s ]
+
+[ 2018-01-07T17:38:58+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/order/getOrderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003037s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_order` WHERE ( userid = '7' )  [ RunTime:0.0007s ]
+
+[ 2018-01-07T17:39:49+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/order/getOrderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003358s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_order` WHERE ( userid = '7' ) ORDER BY orderid DESC  [ RunTime:0.0003s ]
+
+[ 2018-01-07T17:39:55+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002792s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0006s ]
+
+[ 2018-01-07T17:40:18+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003077s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0005s ]
+
+[ 2018-01-07T17:40:25+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home//order/addOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003835s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_user` WHERE ( userid = '7' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `money`='214' WHERE ( userid = '7' ) [ RunTime:0.0051s ]
+SQL: SELECT * FROM `y_user` WHERE ( userid = '7' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminid = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `y_admin` SET `money`='0.59' WHERE ( adminid = 1 ) [ RunTime:0.0029s ]
+SQL: INSERT INTO `y_order` (`bookName`,`orderPrice`,`sessionDate`,`userId`,`orderAdress`,`orderPic`,`orderstate`) VALUES ('自在独行','23','2018-01-07 17:40','7','安徽信息工程学院文津校区4','/2018-01-01/book3.jpg','0') [ RunTime:0.0030s ]
+
+[ 2018-01-07T17:40:27+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003667s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0008s ]
+
+[ 2018-01-07T17:41:13+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/order/getOrderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002788s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_order` WHERE ( userid = '7' ) ORDER BY orderid DESC  [ RunTime:0.0006s ]
+
+[ 2018-01-07T17:41:34+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/order/getOrderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002890s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_order` WHERE ( userid = '7' ) ORDER BY orderid DESC  [ RunTime:0.0005s ]
+
+[ 2018-01-07T17:41:42+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/order/getOrderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003768s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_order` WHERE ( userid = '7' ) ORDER BY orderid DESC  [ RunTime:0.0003s ]
+
+[ 2018-01-07T17:41:44+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/order/getOrderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005105s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_order` WHERE ( userid = '7' ) ORDER BY orderid DESC  [ RunTime:0.0003s ]
+
+[ 2018-01-07T17:41:47+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003051s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0004s ]
+
+[ 2018-01-07T17:41:48+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004270s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0003s ]
+
+[ 2018-01-07T18:28:54+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBooksOnSale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0006s ]
+
+[ 2018-01-07T18:28:54+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getAllBooks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002194s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_book`  [ RunTime:0.0005s ]
+
+[ 2018-01-07T18:28:55+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/friendCircle/getDynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001911s ]
+SQL: SHOW COLUMNS FROM `y_friend` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `y_friend` ORDER BY id DESC  [ RunTime:0.0008s ]
+
+[ 2018-01-07T18:28:55+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/activity/getActivities
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001919s ]
+SQL: SHOW COLUMNS FROM `y_activity` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `y_activity`  [ RunTime:0.0003s ]
+
+[ 2018-01-07T18:29:00+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0003s ]
+
+[ 2018-01-07T18:29:02+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/order/getOrderInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001980s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_order` WHERE ( userid = '7' ) ORDER BY orderid DESC  [ RunTime:0.0004s ]
+
+[ 2018-01-07T18:29:03+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001851s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0004s ]
+
+[ 2018-01-07T18:30:42+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/getNoticeById
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002063s ]
+SQL: SHOW COLUMNS FROM `y_notice` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `y_notice` WHERE ( userid = '7' ) ORDER BY noticeid DESC  [ RunTime:0.0036s ]
+
+[ 2018-01-07T18:30:43+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/getNoticeById
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001730s ]
+SQL: SHOW COLUMNS FROM `y_notice` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `y_notice` WHERE ( userid = '7' ) ORDER BY noticeid DESC  [ RunTime:0.0014s ]
+
+[ 2018-01-07T18:30:53+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002107s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0005s ]
+
+[ 2018-01-07T18:47:46+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007681s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookShow = '1' )  [ RunTime:0.0003s ]
+

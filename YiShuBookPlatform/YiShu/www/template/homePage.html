@@ -1,0 +1,119 @@
+<ion-side-menus>
+    <!-- 中间内容 -->
+    <ion-side-menu-content class="homePage">
+        <ion-header-bar class="bar-stable">
+            <button class="button button-icon icon ion-navicon-round" ng-click="toGoLeft()"></button>
+            <h2 class="title">易书图书平台</h2>
+            <button class="button button-icon icon ion-ios-bell-outline"  ng-click="goMyNotice()"></button>
+        </ion-header-bar>
+        <ion-content class="stable-bg" >
+            <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+            <ion-slide-box active-slide="activeSlide" auto-play="true" does-continue="true" slide-interval="3000" >
+                <ion-slide>
+                    <div>
+                        <img src="img/008.jpg">
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div>
+                        <img src="img/009.jpg">
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div>
+                        <img src="img/002.jpg">
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div>
+                        <img src="img/007.png">
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+            <div class="homePageTJ list card ">
+                <div class="item title">
+                    <img src="img/tuijian.png">
+                    <b><i>首页推荐</i></b>
+                </div>
+            </div>
+            <div class="list card" ng-repeat="bookcard in bookcards" ng-click="goBookInfoWithId($index)">
+                <div class="item item-avatar row">
+                    <div class="col col-60">
+                        <h2>{{bookcard.bookname}}</h2>
+                        <p>{{bookcard.author}} · {{bookcard.booktype}}</p>
+                        <div class="bookinfo">
+                            <p>{{bookcard.bookcontent}}</p>
+                        </div>
+                    </div>
+                    <div class="col col-40">
+                        <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{bookcard.bookposter}}">
+                    </div>
+                </div>
+            </div>
+
+            <div class="list card">
+                <div class="item BTitle" >
+
+                    <img src="img/bangdan.png">
+                    <span>新书热门榜</span>
+                </div>
+                <div class="item row Bcontent1" ng-repeat="rank in bookRank" ng-click="getbookinfo($index)">
+                    <div class="col col-10" style="{{rank.style}}">
+                        <h2>{{rank.rank}}</h2>
+                    </div>
+                    <div class="col col-20 ">
+                        <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{rank.bookposter}}">
+                    </div>
+                    <div class="col col-70">
+                        <p>{{rank.bookname}}</p>
+                    </div>
+                </div>
+            </div>
+        </ion-content>
+    </ion-side-menu-content>
+
+    <!-- 左侧菜单 -->
+    <ion-side-menu side="left" class="personSideMenu">
+        <ion-content scroll="false">
+            <div class="stable-bg text-center padding">
+                <div class="overflow-hidden padding"></div>
+                <div class="avater">
+                    <a ng-click="goPersonalCenter()">
+                        <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{users.picture}}">
+                    </a>
+                </div>
+                <h4 class="light">{{users.nickname}}</h4>
+            </div>
+            <div class="list">
+                <a class="item item-icon-left" ng-click="goMyOrder()">
+                    <i class="icon ion-ios-cart-outline"></i>
+                    我的订单
+                    <span class="badge badge-positive">{{counts.ordercount}}</span>
+                </a>
+                <a class="item item-icon-left" ng-click="goMyFriend()">
+                    <i class="icon ion-ios-chatboxes-outline"></i>
+                    我的动态
+                    <span class="badge badge-positive">{{counts.friendcount}}</span>
+                </a>
+                <a class="item item-icon-left" ng-click="goMyNotice()">
+                    <i class="icon ion-ios-bell-outline"></i>
+                    我的通知
+                    <span class="badge badge-assertive">{{counts.noticecount}}</span>
+                </a>
+                <a class="item item-icon-left" ng-click="goUploadBook()">
+                    <i class="icon ion-ios-cloud-upload-outline"></i>
+                    上架二手书
+                </a>
+                <a class="item item-icon-left" ng-click="goAboutUs()">
+                    <i class="icon ion-ios-information-outline"></i>
+                    关于我们
+                </a>
+            </div>
+        </ion-content>
+        <ion-footer-bar class="bar-assertive">
+            <div class="title" ng-click="logout()">退出</div>
+        </ion-footer-bar>
+    </ion-side-menu>
+
+</ion-side-menus>
+

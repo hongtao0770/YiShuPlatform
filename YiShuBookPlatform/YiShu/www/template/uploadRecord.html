@@ -1,0 +1,26 @@
+<ion-header-bar class="bar-stable">
+    <button class="button  ion-chevron-left button-clear" ng-click="goBack()"></button>
+    <h1 class="title">上传记录</h1>
+</ion-header-bar>
+<ion-content class="recordPage">
+    <div class="list" ng-repeat="record in records">
+        <div class="item row RInfo1">
+            <div class="col col-90">
+                <p>{{record.bookname}}</p>
+            </div>
+            <div class="col col-10">
+                <i class="icon ion-close"></i>
+            </div>
+        </div>
+        <div class="item row RInfo2">
+            <div class="Img col col-40">
+                <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{record.bookposter}}">
+            </div>
+            <div class="price col col-60">
+                <p>价格：<i>￥{{record.bookprice}}</i></p>
+                <p>{{record.time}}</p>
+            </div>
+        </div>
+    </div>
+
+</ion-content>

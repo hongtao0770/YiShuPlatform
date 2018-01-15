@@ -1,0 +1,73 @@
+<ion-header-bar class="bar-stable">
+    <button class="button  ion-chevron-left button-clear" ng-click="goBack()"></button>
+    <h1 class="title">我的订单</h1>
+</ion-header-bar>
+    <ion-tabs class="tabs-top tabs-striped ">
+        <ion-tab title="待发货" on-select="selectTabsWithIndex(0);">
+            <ion-view >
+                <ion-content class="orderPage">
+                    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh(0)"></ion-refresher>
+                    <div class="list" ng-repeat="order in orders">
+                        <div class="item row orderTitle">
+                            <div class="col col-50">
+                                <i class="icon ion-social-linkedin-outline"></i>
+                                <i class="title">易书图书平台></i>
+                            </div>
+                            <div class="col col-50">
+                                <p>待发货</p>
+                            </div>
+                        </div>
+                        <div class="item row orderContent stable-bg">
+                            <div class="col col-30">
+                                <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{order.orderpic}}">
+                            </div>
+                            <div class="col col-50">
+                                <p><b>全书 | {{order.bookname}}</b></p>
+                                <p>{{order.orderadress}}</p>
+                                <p>{{order.sessiondate}}</p>
+                            </div>
+                            <div class="col col-20">
+                                <i>￥</i><i class="dark">{{order.orderprice}}.00</i>
+                                <p>x1</p>
+                            </div>
+                        </div>
+                    </div>
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+        <ion-tab title="已发货" on-select="selectTabsWithIndex(1);">
+            <ion-view>
+                <ion-content class="orderPage">
+                    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh(1)"></ion-refresher>
+                    <div class="list" ng-repeat="order2 in orders2">
+                        <div class="item row orderTitle">
+                            <div class="col col-50">
+                                <i class="icon ion-social-linkedin-outline"></i>
+                                <i class="title">易书图书平台></i>
+                            </div>
+                            <div class="col col-50">
+                                <p style="color: orange">已发货</p>
+                            </div>
+                        </div>
+                        <div class="item row orderContent stable-bg">
+                            <div class="col col-30">
+                                <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{order2.orderpic}}">
+                            </div>
+                            <div class="col col-50">
+                                <p><b>全书 | {{order2.bookname}}</b></p>
+                                <p>{{order2.orderadress}}</p>
+                                <p>{{order2.sessiondate}}</p>
+                            </div>
+                            <div class="col col-20">
+                                <i>￥</i><i class="dark">{{order2.orderprice}}.00</i>
+                                <p>x1</p>
+                            </div>
+                        </div>
+                    </div>
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+    </ion-tabs>
+
+
+</ion-content>

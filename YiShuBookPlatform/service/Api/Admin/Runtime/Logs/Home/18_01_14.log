@@ -1,0 +1,641 @@
+[ 2018-01-14T13:55:24+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002155s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: adminname C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Home\Controller\CommonController.class.php 第 16 行.
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = '%s' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: adminname C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Home\Controller\CommonController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `y_adminlog` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: time C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT * FROM `y_adminlog` WHERE ( time = '' ) LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003231s ]
+
+[ 2018-01-14T13:55:24+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001576s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002107s ]
+
+[ 2018-01-14T13:55:32+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002747s ]
+
+[ 2018-01-14T13:55:37+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Login/logincheck.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' AND adminpassword = '202cb962ac59075b964b07152d234b70' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `y_adminlog` [ RunTime:0.0007s ]
+SQL: INSERT INTO `y_adminlog` (`adminname`,`ip`,`time`,`country`,`count`) VALUES ('admin','192.168.43.253','2018-01-14 13:55:37','局域网','60') [ RunTime:0.0031s ]
+SQL: UPDATE `y_admin` SET `count`='60' WHERE ( adminname = 'admin' ) [ RunTime:0.0031s ]
+
+[ 2018-01-14T13:55:38+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_adminlog` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_adminlog` WHERE ( time = '2018-01-14 13:55:37' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004385s ]
+
+[ 2018-01-14T13:55:43+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Examine/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_examine` [ RunTime:0.0009s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =0 ORDER BY y_examine.examineid DESC  [ RunTime:0.0007s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =1 ORDER BY y_examine.examineid ASC  [ RunTime:0.0005s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =2 ORDER BY y_examine.examineid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 134 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 134 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 134 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 156 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 196 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003557s ]
+
+[ 2018-01-14T13:55:46+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Examine/doexamineT.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `y_examine` [ RunTime:0.0009s ]
+SQL: UPDATE `y_examine` SET `state`='1' WHERE ( examineid = '90' ) [ RunTime:0.0041s ]
+SQL: SELECT * FROM `y_examine` WHERE ( examineid = '90' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `y_notice` [ RunTime:0.0014s ]
+SQL: INSERT INTO `y_notice` (`noticename`,`noticecontent`,`time`,`userid`,`noticetitle`) VALUES ('管理员','恭喜！您于2018-01-14 13:55 上传的《2》已通过审核，正式上架！','2018-01-14 13:55','21','管理员') [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `y_oldbook` [ RunTime:0.0011s ]
+SQL: INSERT INTO `y_oldbook` (`bookname`,`bookprice`,`bookposter`,`bookcontent`,`booktype`,`userid`) VALUES ('2','2','/2018-01-14/5a5af0bdc1c4c.jpeg','2','2','21') [ RunTime:0.0035s ]
+
+[ 2018-01-14T13:55:47+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Examine/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_examine` [ RunTime:0.0008s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =0 ORDER BY y_examine.examineid DESC  [ RunTime:0.0005s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =1 ORDER BY y_examine.examineid ASC  [ RunTime:0.0004s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =2 ORDER BY y_examine.examineid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 134 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 134 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 156 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 196 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002074s ]
+
+[ 2018-01-14T13:58:11+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_order` WHERE ( orderstate = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_order.* FROM `y_order` INNER JOIN y_user on y_order.userId = y_user.userid  WHERE ( orderstate = 0 ) ORDER BY orderid DESC LIMIT 0,5   [ RunTime:0.0008s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_order.* FROM `y_order` INNER JOIN y_user on y_order.userId = y_user.userid  WHERE ( orderstate = 1 ) ORDER BY orderid DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined variable: page1 C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\c9598960eadfb49cd7cb0e5e76951f3a.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002141s ]
+
+[ 2018-01-14T13:58:13+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Order/action.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0006s ]
+SQL: UPDATE `y_order` SET `orderstate`='1' WHERE ( orderid = '62' ) [ RunTime:0.0044s ]
+
+[ 2018-01-14T13:58:15+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_order` WHERE ( orderstate = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_order.* FROM `y_order` INNER JOIN y_user on y_order.userId = y_user.userid  WHERE ( orderstate = 0 ) ORDER BY orderid DESC LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_order.* FROM `y_order` INNER JOIN y_user on y_order.userId = y_user.userid  WHERE ( orderstate = 1 ) ORDER BY orderid DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: page1 C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\c9598960eadfb49cd7cb0e5e76951f3a.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001615s ]
+
+[ 2018-01-14T13:59:01+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Examine/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_examine` [ RunTime:0.0008s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =0 ORDER BY y_examine.examineid DESC  [ RunTime:0.0006s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =1 ORDER BY y_examine.examineid ASC  [ RunTime:0.0005s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =2 ORDER BY y_examine.examineid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 134 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 134 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 134 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 156 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 196 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002686s ]
+
+[ 2018-01-14T13:59:02+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Examine/doexamineT.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `y_examine` [ RunTime:0.0006s ]
+SQL: UPDATE `y_examine` SET `state`='1' WHERE ( examineid = '91' ) [ RunTime:0.0040s ]
+SQL: SELECT * FROM `y_examine` WHERE ( examineid = '91' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `y_notice` [ RunTime:0.0010s ]
+SQL: INSERT INTO `y_notice` (`noticename`,`noticecontent`,`time`,`userid`,`noticetitle`) VALUES ('管理员','恭喜！您于2018-01-14 13:58 上传的《1》已通过审核，正式上架！','2018-01-14 13:59','15','管理员') [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `y_oldbook` [ RunTime:0.0050s ]
+SQL: INSERT INTO `y_oldbook` (`bookname`,`bookprice`,`bookposter`,`bookcontent`,`booktype`,`userid`) VALUES ('1','10','/2018-01-14/5a5af1a1c806e.jpg','1','1','15') [ RunTime:0.0030s ]
+
+[ 2018-01-14T13:59:04+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Examine/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001780s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `y_examine` [ RunTime:0.0006s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =0 ORDER BY y_examine.examineid DESC  [ RunTime:0.0005s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =1 ORDER BY y_examine.examineid ASC  [ RunTime:0.0004s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =2 ORDER BY y_examine.examineid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 134 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 134 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 156 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 178 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 196 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002431s ]
+
+[ 2018-01-14T13:59:53+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Login/Koulin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_admin` WHERE ( token = 'e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.0003s ]
+
+[ 2018-01-14T13:59:54+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `y_adminlog` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_adminlog` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `y_adminlog` ORDER BY adminid DESC LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `y_system` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_system` WHERE ( systemid = 1 )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_admin`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_order` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_user` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Use of undefined constant systemstate - assumed 'systemstate' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\143e1f9455905b66544235019e6914ce.php 第 205 行.
+NOTIC: [8] Use of undefined constant systemstate - assumed 'systemstate' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\143e1f9455905b66544235019e6914ce.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002184s ]
+
+[ 2018-01-14T14:00:57+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002041s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `y_adminlog` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_adminlog` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `y_adminlog` ORDER BY adminid DESC LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `y_system` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_system` WHERE ( systemid = 1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_admin`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_order` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_user` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Use of undefined constant systemstate - assumed 'systemstate' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\143e1f9455905b66544235019e6914ce.php 第 205 行.
+NOTIC: [8] Use of undefined constant systemstate - assumed 'systemstate' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\143e1f9455905b66544235019e6914ce.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002913s ]
+
+[ 2018-01-14T14:08:31+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/book/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `y_book` ORDER BY bookId ASC LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `y_ranklist` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_ranklist`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003029s ]
+
+[ 2018-01-14T14:08:35+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/book/edit/bookid/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_book` WHERE `bookId` = 3 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\6790c7a53ae33e9b0e951d5fa1d40c15.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003383s ]
+
+[ 2018-01-14T14:08:38+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Book/doedit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `y_book` SET `bookName`='皮囊',`bookPrice`='32',`author`='蔡崇达',`bookType`='小说/文学',`bookPress`='人民出版社',`bookSale`='0',`bookShow`='0',`bookContent`='献给内心漂泊无依的你，关于亲人、关于故乡，真挚暖心！蔡崇达随笔集，以人物肖像画的方式描绘了福建渔业小镇的风土人情和时代变迁，在温情而又残酷的故事讲述中阐述了作者对父母、家乡的缅怀，对朋友命运的关切。文集风格沉稳，表达了这一代理想膨胀却又深感现实骨感而无处安身的青年人对自己命运的深切思考。部分作品曾收录于《一个》书系。这部特别的“新人新作”，由韩寒监制，上市之初即广受好评。白岩松、阿来、阎连科等评价为当下写作中的一个惊喜。《皮囊》是一部有着小说阅读质感的散文集，也是一本“认心又认人”的书。' WHERE `bookId` = 3 [ RunTime:0.0034s ]
+
+[ 2018-01-14T14:08:40+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Book/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_book` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_book` ORDER BY bookId ASC LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `y_ranklist` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_ranklist`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001804s ]
+
+[ 2018-01-14T14:08:57+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/book/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001770s ]
+
+[ 2018-01-14T14:10:41+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Book/doadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `y_book` (`bookName`,`bookPrice`,`author`,`bookType`,`bookPress`,`bookSale`,`bookShow`,`bookContent`,`bookPoster`,`salesnum`) VALUES ('硅谷工程师爸爸的超强思维训练课 ','34.6','憨爸','亲子/家教/家教方法','中国妇女出版社','1','0','*“憨爸在美国”公众号数十万粉丝翘首期待的思维训练法
+*理工科学霸、硅谷工程师爸爸分享的独家教育方案
+*让孩子的兴趣在思考中激发、智慧在趣味中启迪、潜能在系统中拓展
+*美式教育理念 中国家庭环境的完美结合
+*从数理思维训练到脑力开发，从数学、科学启蒙到创造力、想象力培养，从学习习惯、时间管理到学习方法，奇思妙想，脑洞大开，帮助孩子养成理性思维习惯，爱上学习，成就无敌脑力 。
+本书介绍了如何运用亲子互动活动、思维导图工具、美国的STEAM教育法等来培养孩子的思维能力，将复杂的思维训练过程简单化、生活化。帮助家长从数学启蒙、编程启蒙，到科学启蒙、艺术启蒙，再到孩子的学习习惯培养、时间管理等，循序渐进地进行思维训练，有效地激发出孩子的超强思维力、创造力和想象力。','/2018-01-14/5a5af461408df.jpg','0') [ RunTime:0.0053s ]
+
+[ 2018-01-14T14:10:42+08:00 ] 192.168.43.253 /YiShuBookPlatform/service/Api/admin.php/Home/Book/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002646s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `y_book` ORDER BY bookId ASC LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `y_ranklist` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `y_ranklist`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\31a1bbdde33600ca6fdd50403f2d00d6.php 第 135 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003083s ]
+

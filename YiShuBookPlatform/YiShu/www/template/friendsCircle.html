@@ -1,0 +1,60 @@
+<ion-header-bar class="bar-stable">
+    <h2 class="title">书友圈</h2>
+    <button class="button button-icon icon ion-ios-bell-outline"  ng-click="goMyNotice()"></button>
+</ion-header-bar>
+<ion-content lazy-scroll class="friendCirclePage stable-bg">
+    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+    <div class="dark-bg text-right padding">
+
+        <div class="Timg">
+            <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{users.picture}}">
+            <h2>{{users.nickname}}</h2>
+        </div>
+    </div>
+    <div class="list list-inset">
+        <label class="item item-input">
+            <input type="text" placeholder="分享新鲜事..." id="content">
+        </label>
+        <button class="button button-block button-energized fasong1" ng-click="publish()">发表动态</button>
+    </div>
+    <div class="list card" ng-repeat="allFriend in allFriends">
+
+        <div class="item item-avatar">
+            <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{allFriend.picture}}">
+            <h2>{{allFriend.nickname}}</h2>
+            <p>{{allFriend.time |date : 'yyyy-MM-dd HH:mm'}}</p>
+        </div>
+
+        <div class="item item-body">
+        <p class="content">
+            {{allFriend.content}}
+        </p>
+        <p>
+            <a href="#" class="subdued">{{allFriend.fabulous}}喜欢</a>
+            <a href="#" class="subdued">{{allFriend.comment.length}} 评论</a>
+        </p>
+
+            <p class="common" ng-repeat="common in allFriend.comment">
+                {{common.nickname}}&nbsp;:&nbsp;{{common.commoncontent}}
+            </p>
+    </div>
+        <div class="item tabs tabs-secondary tabs-icon-left">
+            <a class="tab-item dianzan" ng-click="giveZan($index)" id="dianzan">
+                <img src="img/dianzan2.png">
+            </a>
+            <a class="tab-item" >
+                <i class="icon ion-chatbox"></i>
+                评论
+            </a>
+            <a class="tab-item" href="#">
+                <i class="icon ion-share"></i>
+                分享
+            </a>
+        </div>
+        <div class="item  item-input">
+            <input type="text" placeholder="评论"  id={{$index}} >
+            <button class="button button-dark button-small fasongBtn" ng-click="send($index)">发送</button>
+        </div>
+    </div>
+
+</ion-content>

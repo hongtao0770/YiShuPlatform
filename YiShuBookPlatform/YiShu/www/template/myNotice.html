@@ -1,0 +1,60 @@
+<ion-header-bar class="bar-stable">
+    <button class="button  ion-chevron-left button-clear" ng-click="goBack()"></button>
+    <h1 class="title">我的通知</h1>
+    <div class="buttons">
+        <button class="button button-icon ion-compose"  ng-click="modal.show()">
+        </button>
+    </div>
+</ion-header-bar>
+<ion-content class="NoticePage">
+    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+    <div class="list card message" ng-repeat="notice in notices">
+        <div class="item row messageTitle">
+            <div class="col col-40">
+                <i>{{notice.noticetitle}}消息</i>
+            </div>
+            <div class="col col-60">
+                <i class="icon ion-close" ng-click="delete($index)"></i>
+            </div>
+        </div>
+        <div class="item messageContent item-body">
+            <p>内容：</p>
+            <i>{{notice.noticecontent}}</i>
+        </div>
+        <div class="item messageTime">
+            <p>{{notice.time}}</p>
+            <p> <p>{{notice.noticename}}</p></p>
+        </div>
+    </div>
+</ion-content>
+<script id="templates/modal.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-stable">
+            <h1 class="title">联系管理员</h1>
+            <button class="button  button-clear" ng-click="modal.hide()">取消</button>
+        </ion-header-bar>
+        <ion-content class="padding">
+            <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">发送人</span>
+                    <input type="text"  placeholder="未填写" value="{{users.nickname}}" disabled>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">收件人</span>
+                    <input type="text"   value="管理员" disabled>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">发送内容</span>
+                    <input type="text" id="messagecontent" placeholder="请输入遇到的问题或建议...">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">联系电话</span>
+                    <input type="text" id="phone" placeholder="选填，便于我们联系你" maxlength="11" minlength="11">
+                </label>
+            </div>
+            <div class="padding">
+                <button class="button button-block button-positive" ng-click="sendMessage()">确认发送</button>
+            </div>
+        </ion-content>
+    </ion-modal-view>
+</script>

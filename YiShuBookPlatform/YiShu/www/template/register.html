@@ -1,0 +1,41 @@
+<ion-header-bar class="bar-stable">
+    <button class="button  ion-chevron-left button-clear" ng-click="loginBack()"></button>
+    <h1 class="title">用户注册</h1>
+</ion-header-bar>
+<ion-content lazy-scroll class="registerPage">
+    <div class="list">
+        <div class="item item-input">
+            <i class="inputText">手机号：</i>
+            <input ng-model="$parent.userRegPhone" type="text" placeholder="11位手机号">
+            <button class="button button-dark button-small padding verify" ng-click="getVerifyCode()">
+                获取验证码
+            </button>
+        </div>
+        <div class="item item-input">
+            <i class="inputText">验证码：</i>
+            <input ng-model="$parent.userRegVerify" type="text" placeholder="请输入验证码">
+            <i class="icon ion-close-circled placeholder-icon" ng-click="dismissOne()" ng-if="$parent.userRegVerify.length"></i>
+        </div>
+        <div class="item item-input">
+            <i class="inputText">昵&nbsp;&nbsp;&nbsp;&nbsp;称：</i>
+            <input ng-model="$parent.userRegNickName" type="text" placeholder="请输入昵称">
+            <i class="icon ion-close-circled placeholder-icon" ng-click="dismissTwo()" ng-if="$parent.userRegNickName.length"></i>
+        </div>
+        <div class="item item-input">
+            <i class="inputText">密&nbsp;&nbsp;&nbsp;&nbsp;码：</i>
+            <input ng-model="$parent.userRegPassword" type="password" placeholder="6-12位密码" id="RegPasswordId">
+            <i class="icon ion-close-circled placeholder-icon" ng-click="dismissThree()" ng-if="$parent.userRegPassword.length"></i>
+            <i class="icon ion-eye placeholder-icon padding-right" ng-click="showPwd()"></i>
+        </div>
+    </div>
+    <div class="row checkTerm">
+        <div class="col col-10 col-offset-5" ng-click="docheck()" id="readState">
+            <img src="img/uncheck.png">
+        </div>
+        <i class="col col-25">我已阅读了</i>
+        <a class="col col-60 calm">《YiShu 服务条款》</a>
+    </div>
+    <div class="padding ">
+        <button class="button button-block button-stable" ng-click="registerBtn()">注册</button>
+    </div>
+</ion-content>

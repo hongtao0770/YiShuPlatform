@@ -1,0 +1,110 @@
+<include file="Public:header"/>
+<div class="aright">
+    <fieldset class="layui-elem-field layui-field-title" style="margin: 20px 30px 20px 20px;">
+        <legend>二手书管理</legend>
+    </fieldset>
+    <form method="post" class="aform cl">
+        <table width="100%">
+            <tr>
+                <th width="5%" align="center">图书编号</th>
+                <th width="10%" align="center">图书名称</th>
+                <th width="10%" align="center">图书照片</th>
+                <th width="10%" align="center">图书价格</th>
+                <th width="20%" align="center">图书简介</th>
+                <th width="10%" align="center">图书类型</th>
+                <th width="15%" align="center">发布用户</th>
+                <th width="10%" align="center">基本操作</th>
+            </tr>
+            <volist name="list" id="vo">
+                <tr>
+                    <td align="center">{$vo.bookid}</td>
+                    <td align="center">{$vo.bookname}</td>
+                    <td align="center">
+                        <if condition="$vo[bookposter] neq ''">
+                            <img src="__ROOT__/Uploads{$vo.bookposter}" onclick="img({$vo.bookid});" height="30">
+                            <else />
+                            暂无图片
+                        </if>
+                    </td>
+                    <td align="center">{$vo.bookprice}</td>
+
+                    <td align="center">{$vo.bookcontent}</td>
+                    <td align="center">{$vo.booktype}</td>
+                    <td align="center">{$vo.phone}--{$vo.nickname}</td>
+                    <td align="center">
+                        <a href="{:U('oldbook/edit',array('bookid'=>$vo['bookid']))}">修改</a> |
+                        <a href="#" onclick="del({$vo.bookid})">删除</a>
+                    </td>
+                </tr>
+            </volist>
+        </table>
+    </form>
+    <div class="pages">
+        {$page}
+    </div>
+</div>
+</div>
+<script>
+    function img(id) {
+//        console.log(id);
+        layui.use('layer', function () {
+            //定义全局layer变量
+
+            $.ajax({
+                url:"{:U('Oldbook/img')}",
+                type:'post',
+                data:{
+                    bookId:id
+                },
+                success:function (data, status) {
+                    var image = "__ROOT__/Uploads"+data.mgs;
+                    console.log(image);
+                    layer.open({
+                        type: 1,
+                        title: false,
+                        closeBtn: 0,
+                        area: '300px',
+                        skin: 'layui-layer-nobg', //没有背景色
+                        shadeClose: true,
+                        content: "<img id='bookimg' src='' style='height: 50%;width: 100%'>"
+                    });
+                    $('#bookimg').attr('src',image);
+                    $('.layui-layer-nobg').css({"margin-top":"-150px"});
+
+                },
+            })
+
+        });
+    }
+
+    function del(bookid) {
+        layui.use('layer', function () {
+            layer.confirm('确定删除本条数据？', {title: '提示'}, function (index) {
+                var loading = layer.load(2, {
+                    shade: [0.2,'#000']
+                });
+                $.ajax({
+                    url: "{:U('Oldbook/delete')}",
+                    type: 'post',
+                    data: {
+                        bookid: bookid
+                    },
+                    success: function (data, status) {
+                        if (data.code == 200) {
+                            layer.close(index);
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 1, time: 1000}, function () {
+                                location.href = "{:U('Oldbook/index')}"
+                            });
+                        } else {
+                            layer.close(index);
+                            layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                        }
+                    },
+                });
+            });
+        });
+    }
+</script>
+</body>
+</html>

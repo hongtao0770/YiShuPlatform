@@ -1,0 +1,145 @@
+<include file="Public:header"/>
+<div class="aright">
+    <fieldset class="layui-elem-field layui-field-title" style="margin: 20px 30px 20px 20px;">
+        <legend>订单管理</legend>
+    </fieldset>
+
+    <div class="layui-tab" style="margin: 20px 30px 40px 20px;">
+        <ul class="layui-tab-title">
+            <li class="layui-this">待发货订单</li>
+            <li>发货订单</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form method="post" class="aform cl">
+                    <table width="100%" style="margin-left: -20px">
+                        <tr>
+                            <th width="5%" align="center">编号</th>
+                            <th width="10%" align="center">图书名称</th>
+                            <th width="5%" align="center">价格</th>
+                            <th width="15%" align="center">订单日期</th>
+                            <th width="20%" align="center">用户</th>
+                            <th width="20%" align="center">订单地址</th>
+                            <th width="10%" align="center">订单状态</th>
+                            <th width="15%" align="center">基本操作</th>
+                        </tr>
+                        <volist name="list" id="vo">
+                            <tr>
+                                <td align="center">{$vo.orderid}</td>
+                                <td align="center">{$vo.bookname}</td>
+                                <td align="center">￥{$vo.orderprice}</td>
+                                <td align="center">{$vo.sessiondate}</td>
+                                <td align="center">{$vo.phone}--{$vo.nickname}</td>
+                                <td align="center">{$vo.orderadress}</td>
+                                <td align="center">
+                                    <if condition="$vo['orderstate'] eq 0"><span class="layui-badge layui-bg-cyan">待发货</span></if>
+                                </td>
+                                <td align="center">
+                                    <a href="#" onclick="fahuo({$vo.orderid})">发货</a> |
+                                    <a href="{:U('order/edit',array('orderid'=>$vo['orderid']))}">修改</a> |
+                                    <a href="#" onclick="del({$vo.orderid})">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                    </table>
+                </form>
+                <div class="pages">
+                    {$page}
+                </div>
+            </div>
+            <div class="layui-tab-item">
+                <form method="post" class="aform cl">
+                    <table width="100%" style="margin-left: -20px">
+                        <tr>
+                            <th width="5%" align="center">编号</th>
+                            <th width="10%" align="center">图书名称</th>
+                            <th width="5%" align="center">价格</th>
+                            <th width="15%" align="center">订单日期</th>
+                            <th width="20%" align="center">用户</th>
+                            <th width="25%" align="center">订单地址</th>
+                            <th width="10%" align="center">订单状态</th>
+                            <th width="10%" align="center">基本操作</th>
+                        </tr>
+                        <volist name="list1" id="vo1">
+                            <tr>
+                                <td align="center">{$vo1.orderid}</td>
+                                <td align="center">{$vo1.bookname}</td>
+                                <td align="center">￥{$vo1.orderprice}</td>
+                                <td align="center">{$vo1.sessiondate}</td>
+                                <td align="center">{$vo1.phone}--{$vo1.nickname}</td>
+                                <td align="center">{$vo1.orderadress}</td>
+                                <td align="center">
+                                    <if condition="$vo1['orderstate'] eq 1"><span class="layui-badge layui-bg-green">已发货</span></if>
+                                </td>
+                                <td align="center">
+                                    <a href="#" onclick="del({$vo1.orderid})">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                    </table>
+                </form>
+                <div class="pages">
+                    {$page1}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+<script>
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+
+    function del(orderid) {
+        layui.use('layer', function () {
+            layer.confirm('确定删除本条数据？', {title: '提示'}, function (index) {
+                var loading = layer.load(2, {
+                    shade: [0.2,'#000']
+                });
+                $.ajax({
+                    url: "{:U('Order/delete')}",
+                    type: 'post',
+                    data: {
+                        orderid: orderid
+                    },
+                    success: function (data, status) {
+                        if (data.code == 200) {
+                            layer.close(index);
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 1, time: 1000}, function () {
+                                location.href = "{:U('Order/index')}"
+                            });
+                        } else {
+                            layer.close(index);
+                            layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                        }
+                    },
+                });
+            });
+        });
+    }
+
+    function fahuo(orderid) {
+        layui.use('layer', function () {
+            var loading = layer.load(2, {
+                shade: [0.2,'#000']
+            });
+            $.ajax({
+                type: 'post',
+                url: '{:U("Order/action")}',
+                data: {orderid: orderid},
+                success: function (data, status) {
+                    layer.close(loading);
+                    layer.msg(data.msg, {icon: 1, time: 2000}, function () {
+                        location.href = "{:U('Order/index')}"
+                    });
+                }
+            });
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<ion-header-bar class="bar-stable item-input-inset">
+    <h2 class="title">书城</h2>
+    <button class="button button-icon icon ion-ios-bell-outline"  ng-click="goMyNotice()"></button>
+</ion-header-bar>
+<ion-tabs class="tabs-top tabs-striped">
+    <ion-tab title="最新上架"   on-select="selectTabsWithIndex(0);">
+        <ion-view >
+            <ion-content class="bookStorePage1">
+                <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh(0)"></ion-refresher>
+                <ion-slide-box class="slide1" active-slide="activeSlide" auto-play="true" does-continue="true" slide-interval="3000" >
+                <ion-slide >
+                    <div>
+                        <img src="img/002.jpg">
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div>
+                        <img src="img/005.jpg">
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div>
+                        <img src="img/003.jpg">
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div>
+                        <img src="img/006.jpg">
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+            <div class="list card todayPage">
+                <div class="item title">
+                    <img src="img/tejia.png">
+                    <b><i>今日特价</i></b>
+                </div>
+                <div class="item row" >
+                    <div class="col col-50" ng-repeat="bookobj1 in books1" ng-click="goBookInfoWithId1($index)">
+                        <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{bookobj1.bookposter}}">
+                        <p>{{bookobj1.bookname}}</p><i class="originalPrice">￥50</i><i class="assertive">￥{{bookobj1.bookprice}}</i>
+                    </div>
+
+                </div>
+            </div>
+
+                <div class="list allBook">
+                    <div class="item row">
+                        <div class="col col-25">
+                            <h2>所有图书</h2>
+                        </div>
+                        <div class="col col-75">
+                            <i> >>共有{{allBooks.length}} 本图书</i>
+                        </div>
+                    </div>
+                    <div class="item row" ng-repeat="books in allBooks" ng-click="goBookInfoWithId2($index)">
+                        <div class="col col-40">
+                            <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{books.bookposter}}">
+                        </div>
+                        <div class="col col-60">
+                            <h2>{{books.bookname}}</h2>
+                            <p>{{books.author}} · {{books.booktype}}</p>
+                            <p>{{books.bookcontent}}</p>
+                            <i class="assertive">￥{{books.bookprice}}</i>
+                        </div>
+                    </div>
+                </div>
+            </ion-content>
+        </ion-view>
+    </ion-tab>
+    <ion-tab title="二手图书" on-select="selectTabsWithIndex(1);">
+        <ion-view>
+            <ion-content class="bookStorePage2">
+                <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh(1)"></ion-refresher>
+                <div class="showImg">
+                    <img src="img/activity1.png">
+                </div>
+
+                <div class="list allBook" >
+                    <div class="item row">
+                        <div class="col col-25">
+                            <h2>所有二手书</h2>
+                        </div>
+                        <div class="col col-75">
+                            <i> >>共有{{oldBooks.length}}本二手书</i>
+                        </div>
+                    </div>
+                    <div class="item row" ng-repeat="books in oldBooks" ng-click="goBookInfoWithId3($index)">
+                        <div class="col col-40">
+                            <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{books.bookposter}}">
+                        </div>
+                        <div class="col col-60">
+                            <h2>{{books.bookname}}</h2>
+                            <p>发布用户:{{books.nickname}}</p>
+                            <p>{{books.booktype}}</p>
+                            <i class="assertive">￥{{books.bookprice}}</i>
+                        </div>
+                    </div>
+                </div>
+            </ion-content>
+        </ion-view>
+    </ion-tab>
+</ion-tabs>

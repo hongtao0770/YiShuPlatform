@@ -1,0 +1,62 @@
+<ion-header-bar class="bar-stable">
+    <button class="button  ion-chevron-left button-clear" ng-click="goBack()"></button>
+    <h1 class="title">我的账号</h1>
+</ion-header-bar>
+<ion-content lazy-scroll class="personCenterPage stable-bg">
+    <div class="TImg">
+        <img ng-click="goUpHead()" ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{users.picture}}">
+        <h3>{{users.nickname}} </h3>
+    </div>
+    <div class="list Money">
+        <div class="item row">
+            <div class="col col-50 zhanghu">
+                <img src="img/zhanghu.png">
+                <i>余额：{{users.money}}</i>
+            </div>
+            <div class="col col-50 youhui">
+                <img src="img/youhuijuan.png">
+                <i>优惠券：0</i>
+            </div>
+        </div>
+    </div>
+    <div class="list mima" ng-click="goFgInfo()">
+        <div class="item row">
+            <div class="col col-50 gaimi">
+                <img src="img/gaimi.png" >
+                <i>修改密码</i>
+            </div>
+            <div class="col col-50 jinru">
+                <p> > </p>
+            </div>
+        </div>
+    </div>
+    <div class="list head" ng-click="goUpHead()">
+        <div class="item row">
+            <div class="col col-50 touxiang">
+                <img src="img/gaitou.png" >
+                <i>修改头像</i>
+            </div>
+            <div class="col col-50 jinru">
+                <p> > </p>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="item">
+            <p>修改个人信息</p>
+        </div>
+        <form id="personalInfo" enctype="multipart/form-data">
+        <div class="item item-input">
+            <i class="inputText">昵称：</i>
+            <input  type="text" value="{{users.nickname}}" id="nickname" name="nickname">
+        </div>
+        <div class="item item-input">
+            <i class="inputText">地址：</i>
+            <input  type="text" value="{{users.address}}" placeholder="未填写" id="address" name="address">
+        </div>
+        </form>
+        <div class="item  TwoBtn">
+            <button class="button button-block button-positive saveBtn" ng-click="save()">保存修改</button>
+        </div>
+    </div>
+</ion-content>

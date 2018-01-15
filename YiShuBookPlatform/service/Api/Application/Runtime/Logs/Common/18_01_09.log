@@ -1,0 +1,24 @@
+[ 2018-01-09T19:15:57+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads/2018-01-09/5a54a3b77f49a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001343s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-09T19:16:02+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads/2018-01-09/5a54a3b77f49a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-09T19:17:47+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads/2018-01-09/5a54a3b77f49a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-09T19:17:52+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads/2018-01-09/5a54a3b77f49a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001066s ]
+ERR: 无法加载模块:Uploads
+

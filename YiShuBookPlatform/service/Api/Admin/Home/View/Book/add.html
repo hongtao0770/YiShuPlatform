@@ -1,0 +1,142 @@
+<include file="Public:header"/>
+<div class="aright">
+
+    <fieldset class="layui-elem-field layui-field-title" style="margin: 20px 30px 20px 20px;">
+        <legend>添加图书</legend>
+    </fieldset>
+
+    <form class="layui-form bform" id="form1" onsubmit="return false" enctype="multipart/form-data">
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">图书名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="bookName" id="bookName" required  placeholder="必填内容" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">图书价格</label>
+            <div class="layui-input-block">
+                <input type="text" name="bookPrice" id="bookPrice" required placeholder="必填内容" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">图书封面</label>
+            <div class="layui-input-block">
+                <div class="file-box">
+                    <i class="layui-icon">&#xe61f;</i>
+                    <input class="file-btn" type="button" value="选择图片">
+                    <input class="file-txt" type="text" name="textfield" id="textfield">
+                    <input class="file-file" type="file" name="bookPoster" id="bookPoster" size="28" onchange="document.getElementById('textfield').value=this.value" />
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">图书作者</label>
+            <div class="layui-input-block">
+                <input type="text" name="author"  placeholder="请输入内容" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">图书类型</label>
+            <div class="layui-input-block">
+                <input type="text" name="bookType"  placeholder="请输入图书类型" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">出版社</label>
+            <div class="layui-input-block">
+                <input type="text" name="bookPress"  placeholder="请输入出版社" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否打折</label>
+            <div class="layui-input-block">
+                <input type="radio" name="bookSale" value="1" title="打折" checked="">
+                <input type="radio" name="bookSale" value="0" title="不打折" checked="">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">首页推荐</label>
+            <div class="layui-input-block">
+                <input type="radio" name="bookShow" value="1" title="首页推荐" checked="">
+                <input type="radio" name="bookShow" value="0" title="不推荐" checked="">
+            </div>
+        </div>
+
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">书籍简介</label>
+            <div class="layui-input-block">
+                <textarea name="bookContent" placeholder="请输入书籍简介" class="layui-textarea"></textarea>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" onclick="add()" lay-filter="formDemo" style="background-color:#393D49 ">立即提交</button>
+                <button class="layui-btn layui-btn-primary" onclick="history.go(-1)">返回</button>
+            </div>
+        </div>
+
+    </form>
+    <script>
+        layui.use('form', function(){
+            var form = layui.form();
+        });
+
+        function add() {
+
+            layui.use('layer', function () {
+                var loading = layer.load(2, {
+                    shade: [0.2,'#000']
+                });
+                var bookName = $("#bookName").val();
+                var bookPrice = $("#bookPrice").val();
+                if(bookName == "" || bookPrice =="")
+                {
+                    layer.close(loading);
+                    layer.msg('必填项不能为空！', {icon: 0});
+                }
+                else
+                {
+                    var data = new FormData($('#form1')[0]);
+                    $.ajax({
+                        url: "{:U('Book/doadd')}",
+                        type: 'POST',
+                        data: data,
+                        dataType: 'json',
+                        async: false,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        success: function (data, status) {
+                            if (data.code == 200) {
+                                layer.close(loading);
+                                layer.msg(data.msg, {icon: 1, time: 1000}, function () {
+                                    location.href = "{:U('Book/index')}";
+                                });
+                                return false;
+                            } else {
+                                layer.close(loading);
+                                layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                            }
+                        },
+
+                        fail: function (err, status) {
+                            console.log(err)
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+</div>
+</div>
+</body>
+</html>

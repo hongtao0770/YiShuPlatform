@@ -1,0 +1,320 @@
+<include file="Public:header"/>
+<script src="__ADMIN__/js/jquery-1.4.2.min.js"></script>
+<div class="aright">
+    <fieldset class="layui-elem-field layui-field-title" style="margin: 20px 30px 20px 20px;">
+        <legend>系统设置</legend>
+    </fieldset>
+    <div class="layui-tab" lay-filter="demo" style="margin: 20px 30px 20px 20px;">
+        <ul class="layui-tab-title">
+            <li class="layui-this">登录日志</li>
+            <li>销售记录</li>
+            <li>系统状态</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form  onsubmit="return false" id="form1" class="aform cl" >
+                    <table width="100%" style="margin-left: -20px">
+                        <tr>
+                            <th width="5%" align="center"><input type="checkbox" name="checkbox" id="selall"/></th>
+                            <th width="10%" align="center">管理员名</th>
+                            <th width="20%" align="center">登录IP</th>
+                            <th width="15%" align="center">所在位置</th>
+                            <th width="20%" align="center">登录时间</th>
+                            <th width="10%" align="center">登录次数</th>
+                            <th width="20%" align="center">基本操作</th>
+                        </tr>
+                        <volist name="list1" id="vo">
+                            <tr>
+                                <td align="center"><input type="checkbox" class="selall deletes" name="deletes[]" value="{$vo.adminid}"></td>
+                                <td align="center">{$vo.adminname}</td>
+                                <td align="center">{$vo.ip}</td>
+                                <td align="center">{$vo.country}</td>
+                                <td align="center">{$vo.time}</td>
+                                <td align="center">{$vo.count}</td>
+                                <td align="center">
+                                    <a href="#" onclick="del({$vo.adminid})">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                    </table>
+                    <div class="layui-form-item">
+                        <div style="margin-top: 20px;">
+                            <button style="background-color:#393D49 "  class="layui-btn" onclick="dels('this','{:U('System/deletes')}')"><i class="layui-icon"></i>删除选中</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="pages">
+                    {$page}
+                </div>
+            </div>
+
+
+            <div class="layui-tab-item">
+                <div class="content has-header" style="width: 100%;height: 400px;" >
+                    <div id="main" style="width: 600px;height:400px;float: left"></div>
+                    <div style="width: 42%;height: 400px;float: right;">
+                        <volist name="list3" id="vo1">
+                        <div style="width: 48%;height: 30%;margin-top:30px;float:left;border:2px solid gainsboro">
+                            <div style="width: 30%;height: 100%;float: left;border-left: 4px solid black;">
+                                <img src="__ADMIN__/img/adminTx.png" style="margin-top: 25px">
+                            </div>
+
+                            <div style="width: 68%;height: 100%;float: right">
+                                <p></p>
+                                <p style="font-size: 1.7em;margin-left: 20px;margin-top: 34px">{$vo1.adminname}</p>
+                                <p style="font-size: 1em;margin-left: 20px;color: gray">登录{$vo1.count}次</p>
+                            </div>
+                        </div>
+                        <div style="width: 48%;height: 30%;margin-top:30px;float:right;border:2px solid gainsboro">
+                            <div style="width: 30%;height: 100%;float: left;border-left: 4px solid #E36159">
+                                <img src="__ADMIN__/img/yue.png" style="width:64px;margin-top: 25px">
+                            </div>
+                            <div style="width: 68%;height: 100%;float: right">
+                                <p style="font-size: 1.7em;margin-left: 10px;margin-top: 34px;">￥{$vo1.money}</p>
+                                <p style="font-size: 1em;margin-left: 98px;color: steelblue">提现</p>
+                                <img src="__ADMIN__/img/支付宝(1).png" width="70px" style="margin-left: 80px;margin-top: 10px">
+                            </div>
+                        </div>
+                        </volist>
+                        <div style="width: 48%;height: 30%;margin-top:20px;float:right;border:2px solid gainsboro">
+                            <div style="width: 30%;height: 100%;float: left;border-left: 4px solid #724AA9">
+                                <img src="__ADMIN__/img/usertx.png" style="width:64px;margin-top: 25px">
+                            </div>
+                            <div style="width: 68%;height: 100%;float: right">
+                                <p style="font-size: 1em;margin-left: 20px;margin-top: 30px;color: gray">用户数</p>
+                                <p style="font-size: 1.7em;margin-left: 20px;">{$list5}位</p>
+                            </div>
+                        </div>
+
+                        <div style="width: 48%;height: 30%;margin-top:20px;float:left;border:2px solid gainsboro">
+                            <div style="width: 30%;height: 100%;float: left;border-left: 4px solid #2AABB1">
+                                <img src="__ADMIN__/img/dingdan.png" style="width:64px;margin-top: 25px">
+                            </div>
+                            <div style="width: 68%;height: 100%;float: right">
+                                <p style="font-size: 1em;margin-left: 20px;margin-top: 30px;color: gray">订单数</p>
+                                <p style="font-size: 1.7em;margin-left: 20px;">{$list4}笔</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layui-tab-item">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">系统状态</label>
+                        <volist name="list2" id="vo1">
+                        <div class="layui-input-block">
+                            <if condition="$vo1[systemstate] eq 1"><a href="#" onclick="action(this,{$vo1.systemid})" class="layui-btn">启用中</a></if>
+                            <if condition="$vo1[systemstate] eq 0"><a href="#"onclick="action(this,{$vo1.systemid})"  class="layui-btn layui-btn-danger">关闭中</a></if>
+                        </div>
+                        </volist>
+                    </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+<script>
+
+
+    layui.use('form', function(){
+        var form = layui.form();
+    });
+
+
+
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+
+    function action(obj,systemid) {
+        layui.use('layer', function () {
+            var loading = layer.load(2, {
+                shade: [0.2, '#000']
+            });
+            $.ajax({
+                type: 'post',
+                url: '{:U("System/appSvc")}',
+                data: {
+                    systemid: systemid
+                },
+                success: function (data) {
+                    if (data.response == 0) {
+                        $(obj).removeClass(' layui-btn-danger').addClass('layui-btn-danger').text('关闭中');
+                        layer.msg(data.msg, {icon: 5, time: 1000}, function () {
+                            layer.close(loading);
+                        });
+                    } else if (data.response == 1) {
+                        $(obj).removeClass(' layui-btn-danger').addClass('').text('启用中');
+                        layer.msg(data.msg, {icon: 6, time: 1000}, function () {
+                            layer.close(loading);
+                        });
+                    }
+                }
+            });
+        });
+    }
+
+    $("#selall").click(function(){
+        if($(this).attr("checked")){
+            $(".selall").attr("checked","checked");
+        }else{
+            $(".selall").removeAttr("checked");
+        }
+
+    })
+    //删除
+    function del(adminid) {
+        layui.use('layer', function () {
+            layer.confirm('确定删除本条数据？', {title: '提示'}, function (index) {
+                var loading = layer.load(2, {
+                    shade: [0.2,'#000']
+                });
+                $.ajax({
+                    url: "{:U('System/delete')}",
+                    type: 'post',
+                    data: {
+                        adminid: adminid
+                    },
+                    success: function (data, status) {
+                        if (data.code == 200) {
+                            layer.close(index);
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 1, time: 1000}, function () {
+                                location.href = "{:U('System/index')}"
+                            });
+                        } else {
+                            layer.close(index);
+                            layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                        }
+                    },
+                });
+            });
+        });
+    }
+
+
+    function dels(obj, url) {
+        layui.use('layer', function () {
+            var layer = layui.layer;
+            var loading = layer.load(2, {
+                shade: [0.2,'#000']
+            });
+            layer.confirm('确定批量删除数据？', {title: '提示'}, function (index) {
+                var data = $('.deletes').serialize();
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    data: data,
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data.code == 200) {
+                            layer.close(index);
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 1, time: 1000}, function () {
+                                location.href = "{:U('System/index')}"
+                            });
+                        } else {
+                            layer.close(index);
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                        }
+                    }
+                });
+                layer.close(index);
+            });
+        });
+    }
+
+
+//    $.ajax({
+//        type: 'post',
+//        url: '{:U("System/getAllBook")}',
+//
+//        success: function (data) {
+//            console.log(data);
+//        }
+//    });
+
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    option = {
+        title : {
+            text: '易书图书销量统计',
+        },
+        tooltip : {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['新图书销量','二手书销量']
+        },
+        toolbox: {
+            show : true,
+            feature : {
+                dataView : {show: true, readOnly: false},
+                magicType : {show: true, type: ['line', 'bar']},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+        calculable : true,
+        xAxis : [
+            {
+                type : 'category',
+                data : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+            }
+        ],
+        yAxis : [
+            {
+                type : 'value'
+            }
+        ],
+        series : [
+            {
+                name:'新图书销量',
+                type:'bar',
+                data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+                markPoint : {
+                    data : [
+                        {type : 'max', name: '最大值'},
+                        {type : 'min', name: '最小值'}
+                    ]
+                },
+                markLine : {
+                    data : [
+                        {type : 'average', name: '平均值'}
+                    ]
+                }
+            },
+            {
+                name:'二手书销量',
+                type:'bar',
+                data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+                markPoint : {
+                    data : [
+                        {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183},
+                        {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
+                    ]
+                },
+                markLine : {
+                    data : [
+                        {type : 'average', name : '平均值'}
+                    ]
+                }
+            }
+        ]
+    };
+
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+
+</script>
+</body>
+</html>

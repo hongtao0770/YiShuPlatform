@@ -1,0 +1,590 @@
+[ 2017-12-31T11:49:15+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002499s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0007s ]
+
+[ 2017-12-31T11:49:27+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getAllBooks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `y_book`  [ RunTime:0.0004s ]
+
+[ 2017-12-31T11:49:27+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBooksOnSale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004642s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0006s ]
+
+[ 2017-12-31T11:49:32+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/friendCircle/getDynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001895s ]
+SQL: SHOW COLUMNS FROM `y_friend` [ RunTime:0.0059s ]
+SQL: SELECT `id` FROM `y_friend` ORDER BY id DESC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 44 )  [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `y_common` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 44 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 43 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 43 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 42 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 42 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 41 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 41 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 39 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 39 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 32 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 32 )  [ RunTime:0.0003s ]
+
+[ 2017-12-31T11:50:27+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/activity/getActivities
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+SQL: SHOW COLUMNS FROM `y_activity` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `y_activity`  [ RunTime:0.0004s ]
+
+[ 2017-12-31T11:50:58+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/friendCircle/getDynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `y_friend` [ RunTime:0.0047s ]
+SQL: SELECT `id` FROM `y_friend` ORDER BY id DESC  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 44 )  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `y_common` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 44 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 43 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 43 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 42 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 42 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 41 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 41 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 39 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 39 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 32 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 32 )  [ RunTime:0.0007s ]
+
+[ 2017-12-31T11:51:17+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getAllBooks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003891s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `y_book`  [ RunTime:0.0006s ]
+
+[ 2017-12-31T11:51:17+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBooksOnSale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004141s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0006s ]
+
+[ 2017-12-31T11:51:19+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getAllBooks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `y_book`  [ RunTime:0.0005s ]
+
+[ 2017-12-31T11:51:19+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBooksOnSale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001516s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0004s ]
+
+[ 2017-12-31T11:51:21+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getOldBooks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `y_oldbook` [ RunTime:0.0057s ]
+SQL: select y_user.nickname,y_oldbook.*from y_user,y_oldbook where y_oldbook.userid = y_user.userid [ RunTime:0.0038s ]
+
+[ 2017-12-31T11:51:22+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getOldBooks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+SQL: SHOW COLUMNS FROM `y_oldbook` [ RunTime:0.0040s ]
+SQL: select y_user.nickname,y_oldbook.*from y_user,y_oldbook where y_oldbook.userid = y_user.userid [ RunTime:0.0005s ]
+
+[ 2017-12-31T12:00:55+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002130s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0005s ]
+
+[ 2017-12-31T12:08:31+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/saveInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001766s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0047s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `nickname`='洪涛',`address`='安徽信息工程学院文津校区' WHERE ( userid = '7' ) [ RunTime:0.0037s ]
+
+[ 2017-12-31T12:09:05+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/saveInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0007s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `nickname`='洪涛',`address`='安徽信息工程学院文津校区' WHERE ( userid = '7' ) [ RunTime:0.0058s ]
+
+[ 2017-12-31T12:09:08+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/saveInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0039s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `nickname`='洪涛',`address`='安徽信息工程学院文津校区' WHERE ( userid = '7' ) [ RunTime:0.0039s ]
+
+[ 2017-12-31T12:09:09+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/saveInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0039s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `nickname`='洪涛',`address`='安徽信息工程学院文津校区' WHERE ( userid = '7' ) [ RunTime:0.0038s ]
+
+[ 2017-12-31T12:09:59+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/saveInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0038s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `nickname`='洪涛',`address`='安徽信息工程学院文津校区4栋' WHERE ( userid = '7' ) [ RunTime:0.0039s ]
+
+[ 2017-12-31T12:10:07+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002701s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0004s ]
+
+[ 2017-12-31T12:12:59+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/saveInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002064s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0008s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `nickname`='洪涛',`address`='安徽信息工程学院文津校区' WHERE ( userid = '7' ) [ RunTime:0.0045s ]
+SQL: SELECT * FROM `y_user` WHERE ( userid = '7' )  [ RunTime:0.0004s ]
+
+[ 2017-12-31T12:13:05+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002135s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0005s ]
+
+[ 2017-12-31T12:14:21+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001797s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0006s ]
+
+[ 2017-12-31T12:14:25+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/friendCircle/getDynamic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002614s ]
+SQL: SHOW COLUMNS FROM `y_friend` [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `y_friend` ORDER BY id DESC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 44 )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `y_common` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 44 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 43 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 43 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 42 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 42 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 41 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 41 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 39 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 39 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_friend` INNER JOIN y_user on y_friend.userid = y_user.userid  WHERE ( id = 32 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `y_common` INNER JOIN y_user on y_common.userid = y_user.userid  WHERE ( fid = 32 )  [ RunTime:0.0004s ]
+
+[ 2017-12-31T12:15:28+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001467s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0004s ]
+
+[ 2017-12-31T12:15:46+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001359s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_user` WHERE ( phone = '15755320770' ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-12-31T12:15:47+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002028s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0007s ]
+
+[ 2017-12-31T12:15:54+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002654s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0007s ]
+
+[ 2017-12-31T12:16:11+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/saveInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `nickname`='洪涛',`address`='安徽信息工程学院文津校区4' WHERE ( userid = '7' ) [ RunTime:0.0101s ]
+SQL: SELECT * FROM `y_user` WHERE ( userid = '7' )  [ RunTime:0.0005s ]
+
+[ 2017-12-31T12:16:11+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001693s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0004s ]
+
+[ 2017-12-31T12:16:31+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0004s ]
+
+[ 2017-12-31T12:17:02+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/saveInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0007s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `nickname`='',`address`='' WHERE ( userid = '' ) [ RunTime:0.0003s ]
+
+[ 2017-12-31T12:17:02+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001957s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0004s ]
+
+[ 2017-12-31T12:17:21+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_user` WHERE ( phone = '15755320770' ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-12-31T12:17:22+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001477s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0006s ]
+
+[ 2017-12-31T12:17:25+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBooksOnSale
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001518s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0006s ]
+
+[ 2017-12-31T12:17:25+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getAllBooks
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001623s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `y_book`  [ RunTime:0.0006s ]
+
+[ 2017-12-31T12:17:37+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/saveInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0043s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `nickname`='洪涛',`address`='安徽信息工程学院文津校区' WHERE ( userid = '7' ) [ RunTime:0.0049s ]
+SQL: SELECT * FROM `y_user` WHERE ( userid = '7' ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-12-31T12:17:37+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0007s ]
+
+[ 2017-12-31T12:17:51+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/saveInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001368s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0008s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `nickname`='洪涛',`address`='安徽信息工程学院文津校区4栋' WHERE ( userid = '7' ) [ RunTime:0.0050s ]
+SQL: SELECT * FROM `y_user` WHERE ( userid = '7' ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-12-31T12:17:51+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0004s ]
+
+[ 2017-12-31T12:20:04+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/saveInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `nickname`='洪涛',`address`='安徽信息工程学院文津校区4' WHERE ( userid = '7' ) [ RunTime:0.0042s ]
+SQL: SELECT * FROM `y_user` WHERE ( userid = '7' ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-12-31T12:20:06+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001489s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0005s ]
+
+[ 2017-12-31T12:20:43+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/saveInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002242s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `nickname`='洪涛',`address`='安徽信息工程学院文津校区4栋' WHERE ( userid = '7' ) [ RunTime:0.0053s ]
+SQL: SELECT * FROM `y_user` WHERE ( userid = '7' ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-12-31T12:20:45+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001450s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0006s ]
+
+[ 2017-12-31T12:21:02+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/saveInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001325s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0010s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `nickname`='WindLetter',`address`='安徽信息工程学院文津校区4栋' WHERE ( userid = '7' ) [ RunTime:0.0049s ]
+SQL: SELECT * FROM `y_user` WHERE ( userid = '7' ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-12-31T12:21:04+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0005s ]
+
+[ 2017-12-31T12:46:45+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/register/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+ERR: 参数错误或者未定义:nickname
+
+[ 2017-12-31T12:49:32+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/editMima
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002338s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0012s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `password`='827ccb0eea8a706c4c34a16891f84e7b' WHERE ( phone = '15755320770' ) [ RunTime:0.0061s ]
+
+[ 2017-12-31T12:50:35+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003148s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `y_user` WHERE ( phone = '15755320770' ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-12-31T12:50:39+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `y_user` WHERE ( phone = '15755320770' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-12-31T12:50:40+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0009s ]
+
+[ 2017-12-31T12:51:07+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/user/editMima
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001885s ]
+SQL: SHOW COLUMNS FROM `y_user` [ RunTime:0.0007s ]
+NOTIC: [2] Illegal offset type in isset or empty C:\xampp\htdocs\YiShuBookPlatform\service\Api\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `y_user` SET `password`='e10adc3949ba59abbe56e057f20f883e' WHERE ( phone = '15755320770' ) [ RunTime:0.0049s ]
+
+[ 2017-12-31T12:57:45+08:00 ] ::1 /YiShuBookPlatform/service/Api/index.php/home/book/getBookCard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002151s ]
+SQL: SHOW COLUMNS FROM `y_book` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `y_book` WHERE ( bookSale = '1' )  [ RunTime:0.0006s ]
+

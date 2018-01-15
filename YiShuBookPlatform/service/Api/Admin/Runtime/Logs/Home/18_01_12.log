@@ -1,0 +1,305 @@
+[ 2018-01-12T08:28:05+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: adminname C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Home\Controller\CommonController.class.php 第 16 行.
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = '%s' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: adminname C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Home\Controller\CommonController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `y_adminlog` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: time C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SELECT * FROM `y_adminlog` WHERE ( time = '' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001659s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001722s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002063s ]
+
+[ 2018-01-12T08:28:05+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2018-01-12T08:28:11+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php/Home/Login/logincheck.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001808s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' AND adminpassword = '202cb962ac59075b964b07152d234b70' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `y_adminlog` [ RunTime:0.0006s ]
+SQL: INSERT INTO `y_adminlog` (`adminname`,`ip`,`time`,`country`,`count`) VALUES ('admin','0.0.0.0','2018-01-12 08:28:11','IANA保留地址','56') [ RunTime:0.0029s ]
+SQL: UPDATE `y_admin` SET `count`='56' WHERE ( adminname = 'admin' ) [ RunTime:0.0029s ]
+
+[ 2018-01-12T08:28:13+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `y_adminlog` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `y_adminlog` WHERE ( time = '2018-01-12 08:28:11' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002064s ]
+
+[ 2018-01-12T08:28:15+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php/Home/oldbook/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `y_oldbook` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_oldbook` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_oldbook.* FROM `y_oldbook` INNER JOIN y_user on y_oldbook.userid = y_user.userid  ORDER BY bookid ASC LIMIT 0,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\aebc84aca4c5f5556804b7a9c56d0efc.php 第 123 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\aebc84aca4c5f5556804b7a9c56d0efc.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001457s ]
+
+[ 2018-01-12T08:28:18+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php/Home/friend/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_friend` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_friend` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_friend.* FROM `y_friend` INNER JOIN y_user on y_user.userId = y_friend.userid  ORDER BY id DESC LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001782s ]
+
+[ 2018-01-12T08:28:19+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php/Home/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_order` WHERE ( orderstate = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_order.* FROM `y_order` INNER JOIN y_user on y_order.userId = y_user.userid  WHERE ( orderstate = 0 ) ORDER BY orderid DESC LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_order.* FROM `y_order` INNER JOIN y_user on y_order.userId = y_user.userid  WHERE ( orderstate = 1 ) ORDER BY orderid DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined variable: page1 C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\c9598960eadfb49cd7cb0e5e76951f3a.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001758s ]
+
+[ 2018-01-12T08:28:21+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php/Home/Activity/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+SQL: SHOW COLUMNS FROM `y_activity` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_activity` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_activity` LIMIT 0,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Use of undefined constant activityposter - assumed 'activityposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\b6183401a528fe386e0cf00afb70cd69.php 第 129 行.
+NOTIC: [8] Use of undefined constant activityposter - assumed 'activityposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\b6183401a528fe386e0cf00afb70cd69.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002641s ]
+
+[ 2018-01-12T08:28:22+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php/Home/Activity/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+SQL: SHOW COLUMNS FROM `y_activity` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_activity` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `y_activity` LIMIT 0,5   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Use of undefined constant activityposter - assumed 'activityposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\b6183401a528fe386e0cf00afb70cd69.php 第 129 行.
+NOTIC: [8] Use of undefined constant activityposter - assumed 'activityposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\b6183401a528fe386e0cf00afb70cd69.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001980s ]
+
+[ 2018-01-12T08:28:23+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php/Home/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `y_order` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_order` WHERE ( orderstate = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_order.* FROM `y_order` INNER JOIN y_user on y_order.userId = y_user.userid  WHERE ( orderstate = 0 ) ORDER BY orderid DESC LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_order.* FROM `y_order` INNER JOIN y_user on y_order.userId = y_user.userid  WHERE ( orderstate = 1 ) ORDER BY orderid DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: page1 C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\c9598960eadfb49cd7cb0e5e76951f3a.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001964s ]
+
+[ 2018-01-12T08:28:29+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php/Home/Examine/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001359s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `y_examine` [ RunTime:0.0010s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =0 ORDER BY y_examine.examineid DESC  [ RunTime:0.0007s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =1 ORDER BY y_examine.examineid ASC  [ RunTime:0.0006s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_examine.* from y_examine,y_user WHERE y_examine.userid = y_user.userid AND y_examine.state =2 ORDER BY y_examine.examineid ASC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 133 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 133 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 133 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 155 行.
+NOTIC: [8] Use of undefined constant bookposter - assumed 'bookposter' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 177 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 195 行.
+NOTIC: [8] Undefined variable: page C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\9bb217902d2ac41e1e1701a869d1c2a5.php 第 235 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002010s ]
+
+[ 2018-01-12T08:28:33+08:00 ] ::1 /YiShuBookPlatform/service/Api/admin.php/Home/Message/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `y_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `y_admin` WHERE ( adminname = 'admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `y_message` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `y_message` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT y_user.phone,y_user.nickname,y_message.* FROM `y_message` INNER JOIN y_user on y_message.userid=y_user.userid  ORDER BY messageid DESC LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\c2fc1e3bf94d11f2eee440e3c5e30eff.php 第 123 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\c2fc1e3bf94d11f2eee440e3c5e30eff.php 第 124 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\c2fc1e3bf94d11f2eee440e3c5e30eff.php 第 123 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\c2fc1e3bf94d11f2eee440e3c5e30eff.php 第 124 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\c2fc1e3bf94d11f2eee440e3c5e30eff.php 第 123 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' C:\xampp\htdocs\YiShuBookPlatform\service\Api\Admin\Runtime\Cache\Home\c2fc1e3bf94d11f2eee440e3c5e30eff.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001511s ]
+

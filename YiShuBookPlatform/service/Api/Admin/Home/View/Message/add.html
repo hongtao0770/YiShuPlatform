@@ -1,0 +1,106 @@
+ <include file="Public:header"/>
+    <div class="aright">
+
+        <fieldset class="layui-elem-field layui-field-title" style="margin: 20px 30px 20px 20px;">
+            <legend>发邮件</legend>
+        </fieldset>
+
+        <form class="layui-form bform" id="form1" onsubmit="return false">
+            <div class="layui-form-item" style="width: 300px;">
+                <label class="layui-form-label">发件人</label>
+                <div class="layui-input-block">
+                    <input type="text" name="noticename" required lay-verify="required" placeholder="必填内容" autocomplete="off" class="layui-input" value="管理员" disabled>
+                </div>
+            </div>
+
+            <div class="layui-form-item" style="width: 300px;">
+                <label class="layui-form-label">收件人</label>
+                <div class="layui-input-block">
+                    <select name="userid">
+                        <option value="0">所有人</option>
+                        <volist name="list" id="vo">
+                            <option value="{$vo.userid}">{$vo.userid}--{$vo.nickname}</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item" style="width: 300px;">
+                <label class="layui-form-label">标题</label>
+                <div class="layui-input-block">
+                    <select name="noticetitle">
+                        <option>系统</option>
+                        <option>管理员</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item layui-form-text" style="width: 500px;">
+                <label class="layui-form-label">邮件内容</label>
+                <div class="layui-input-block">
+                    <textarea name="noticecontent" placeholder="请输入内容" class="layui-textarea" id="noticecontent"></textarea>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" onclick="add()" lay-filter="formDemo"  style="background-color:#393D49 ">立即提交</button>
+                        <button class="layui-btn layui-btn-primary" onclick="history.go(-1)">返回</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    </div>
+ <script>
+     layui.use('form', function(){
+         var form = layui.form();
+     });
+
+     function add() {
+
+         layui.use('layer', function () {
+             var loading = layer.load(2, {
+                 shade: [0.2,'#000']
+             });
+
+             var noticecontent = $("#noticecontent").val();
+             if(noticecontent == "")
+             {
+                 layer.close(loading);
+                 layer.msg('消息内容不能为空！', {icon: 0});
+             }else
+             {
+                 var data = new FormData($('#form1')[0]);
+                 $.ajax({
+                     url: "{:U('Message/doadd')}",
+                     type: 'POST',
+                     data: data,
+                     dataType: 'json',
+                     async: false,
+                     cache: false,
+                     contentType: false,
+                     processData: false,
+                     success: function (data, status) {
+                         if (data.code == 200) {
+                             layer.close(loading);
+                             layer.msg(data.msg, {icon: 1, time: 1000}, function () {
+                                 location.href = "{:U('Message/index')}";
+                             });
+                             return false;
+                         } else {
+                             layer.close(loading);
+                             layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                         }
+                     },
+
+                     fail: function (err, status) {
+                         console.log(err)
+                     }
+                 });
+             }
+         });
+     }
+ </script>
+    </body>
+    </html>

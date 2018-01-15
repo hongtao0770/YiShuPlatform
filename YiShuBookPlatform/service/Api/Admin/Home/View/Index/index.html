@@ -1,0 +1,93 @@
+<include file="Public:header"/>
+<div class="aright">
+    <div class="aright_1">
+        <blockquote style="padding: 10px;border-left: 5px solid #FF5722;" class="layui-elem-quote">登录信息：</blockquote>
+        <table class="layui-table">
+            <thead>
+            <th style="text-align: center;color:black;">管理员名</th><th style="text-align: center;color:black;">登录Ip</th><th style="text-align: center;color:black;">所在位置</th><th style="text-align: center;color:black;">最后一次登陆时间</th><th style="text-align: center;color:black;">登录次数</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;color:black;">{$data.adminname}</td>
+                    <td style="text-align: center;color:black;">{$data.ip}</td>
+                    <td style="text-align: center;color:black;">{$data.country}</td>
+                    <td style="text-align: center;color:black;">{$data.time}</td>
+                    <td style="text-align: center;color:black;">{$data.count}次</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <blockquote style="padding: 10px;border-left: 5px solid #FF5722;" class="layui-elem-quote">欢迎使用易书图书后台管理系统，先温馨提醒几个常见问题：</blockquote>
+        <table width="100%">
+            <tr>
+                <td width="480px">程序正式上线运营请把admin.php里面调试模式关闭；</td>
+                <td>确认服务器或空间开启了伪静态；</td>
+            </tr>
+            <tr>
+                <td>安装完成后请将根目录install文件和index.php里面安装代码删除；</td>
+                <td>请将程序内的所有文件直接放在根目录下，不要多层目录；</td>
+            </tr>
+            <tr>
+                <td>尽管本程序在发布前已经经过了若干严格测试，但我们依然强烈建议您随时备份；</td>
+                <td>程序安装好后一定记得修改密码和口令；</td>
+            </tr>
+        </table>
+        <blockquote style="padding: 10px;border-left: 5px solid #FF5722;" class="layui-elem-quote">服务器信息：</blockquote>
+        <div class="layui-field-box">
+            <table class="layui-table">
+                <tbody>
+                <tr>
+                    <td style=";color:black;">操作系统</td>
+                    <td style=";color:black;">Windows</td>
+                </tr>
+                <tr>
+                    <td style=";color:black;">运行环境</td>
+                    <td style=";color:black;">Apache</td>
+                </tr>
+                <tr>
+                    <td style=";color:black;">PHP运行方式</td>
+                    <td style=";color:black;">apache2handler</td>
+                </tr>
+                <tr>
+                    <td style=";color:black;">ThinkPHP版本</td>
+                    <td style=";color:black;">3.2.3 [ <a href="http://thinkphp.cn" target="_blank">查看最新版本</a> ]</td>
+                </tr>
+                <tr>
+                    <td style=";color:black;">上传附件限制</td>
+                    <td style=";color:black;">50M</td>
+                </tr>
+                <tr>
+                    <td style=";color:black;">执行时间限制</td>
+                    <td style=";color:black;">300秒</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<script>
+//    layui.use('layer', function () {
+//        layer.open({
+//            type: 1,
+//            title: false,//不显示标题栏,
+//            closeBtn: false,
+//            shade: 0.8,
+//            id: 'LAY_layuipro' ,//设定一个id，防止重复弹出
+//            btn: ['确定'],
+//            btnAlign: 'c',
+//            moveType: 1 ,//拖拽模式，0或者1,
+//            content: '<div style="padding: 30px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">' +
+//            '用户名：sys1<br>' +
+//            '密&nbsp;&nbsp;&nbsp;码：sys1<br>' +
+//            '开源地址：<br>' +
+//            '<a href="https://github.com/shuaijunlan/Autumn-Framework" target="_blank" style="color: greenyellow">https://github.com/shuaijunlan/Autumn-Framework(点击跳转)</a></div>'
+//            ,
+//            success: function (layero) {
+//
+//            }
+//        });
+//    });
+</script>
+</html>

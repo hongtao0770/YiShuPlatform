@@ -1,0 +1,75 @@
+<include file="Public:header"/>
+<div class="aright">
+    <fieldset class="layui-elem-field layui-field-title" style="margin: 20px 30px 20px 20px;">
+        <legend>管理用户</legend>
+    </fieldset>
+    <form method="post" class="aform cl">
+        <table width="100%">
+            <tr>
+                <th width="5%" align="center">用户ID</th>
+                <th width="10%" align="center">用户头像</th>
+                <th width="10%" align="center">用户昵称</th>
+                <th width="10%" align="center">手机号</th>
+                <th width="35%" align="center">地址</th>
+                <th width="20%" align="center">登录状态</th>
+                <th width="20%" align="center">基本操作</th>
+            </tr>
+            <volist name="list" id="vo">
+                <tr>
+                    <td align="center">{$vo.userid}</td>
+                    <td align="center">
+                        <if condition="$vo[picture] neq ''">
+                            <img src="__ROOT__/Uploads{$vo.picture}" height="30">
+                            <else />
+                            尚未上传头像
+                        </if>
+                    </td>
+
+                    <td align="center">{$vo.nickname}</td>
+                    <td align="center">{$vo.phone}</td>
+                    <td align="center">
+
+                        <if condition="$vo[address] neq ''">
+                            {$vo.address}
+                            <else />
+                            暂无地址
+                        </if>
+
+                    </td>
+                    <td align="center">
+                        <if condition="$vo['state'] eq 1"><a href="#" onclick="action(this,{$vo.userid})" class="layui-btn  layui-btn-radius layui-btn-small">已激活</a></if>
+                        <if condition="$vo['state'] eq 0"><a href="#"onclick="action(this,{$vo.userid})"  class="layui-btn layui-btn-radius layui-btn-danger layui-btn-small">已禁用</a></if>
+                        <if condition="$vo['state'] eq 2"><a href="#"  class="layui-btn layui-btn-radius layui-btn-disabled layui-btn-small">系统维护中</a></if>
+                    </td>
+
+                    <td align="center">
+                        <a href="{:U('user/edit',array('userid'=>$vo['userid']))}">修改</a>
+                    </td>
+                </tr>
+            </volist>
+        </table>
+    </form>
+    <div class="pages">
+        {$page}
+    </div>
+</div>
+</div>
+</body>
+
+<script>
+    function action(obj, userid) {
+        $.ajax({
+            type: 'post',
+            url: '{:U("User/action")}',
+            data: {userid: userid},
+            success: function (response) {
+                if (response == 0) {
+                    $(obj).removeClass(' layui-btn-danger').addClass('layui-btn-danger').text('已禁用');
+                } else if (response == 1) {
+                    $(obj).removeClass(' layui-btn-danger').addClass('').text('已激活');
+                }
+            }
+        });
+    }
+</script>
+</html>

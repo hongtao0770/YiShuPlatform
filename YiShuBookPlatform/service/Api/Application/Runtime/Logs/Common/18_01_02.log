@@ -1,0 +1,481 @@
+[ 2018-01-02T08:21:27+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads/touxiang1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001353s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T08:21:27+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads/morentouxiang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T08:23:44+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads/touxiang1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:42+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a45995de2ea3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001851s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:42+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a4599752877a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001131s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:42+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a45993a3affb.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:42+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a45996bd82d9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002087s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:46+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a45993a3affb.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:46+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a45995de2ea3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:46+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a45996bd82d9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:47+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a4599752877a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:47+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a4599877c19b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:49+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a45993a3affb.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001380s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:49+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a45995de2ea3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001724s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:49+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a4599752877a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001923s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:49+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a45996bd82d9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016410s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:57:49+08:00 ] ::1 /service/Api/Uploads/2017-12-29/5a4599877c19b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018160s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:58:52+08:00 ] ::1 /service/Api/Uploads/2018-01-02/5a4ae25fcea65.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T14:58:52+08:00 ] ::1 /service/Api/Uploads/2018-01-02/5a4ae2702d9a9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000726s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004992s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T15:02:20+08:00 ] ::1 /service/Api/Uploads/2018-01-02/5a4ae25fcea65.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T15:02:20+08:00 ] ::1 /service/Api/Uploads/2018-01-02/5a4ae2702d9a9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T15:10:24+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploadsbook1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+ERR: 无法加载模块:Uploadsbook1
+
+[ 2018-01-02T15:10:25+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploadsbook4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+ERR: 无法加载模块:Uploadsbook4
+
+[ 2018-01-02T15:10:25+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploadsbook3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001072s ]
+ERR: 无法加载模块:Uploadsbook3
+
+[ 2018-01-02T15:10:25+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploadsbook2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+ERR: 无法加载模块:Uploadsbook2
+
+[ 2018-01-02T15:10:25+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploadsbook10.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+ERR: 无法加载模块:Uploadsbook10
+
+[ 2018-01-02T15:22:55+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads//2018-01-02/5a4ad9367178a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T15:24:06+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads//2018-01-02/5a4ad9367178a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T15:24:52+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads//2018-01-02/5a4ad9367178a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T15:29:22+08:00 ] ::1 /YiShuBookPlatform/service/Api/application/index.php/Home/friend/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+ERR: 无法加载模块:Application
+
+[ 2018-01-02T15:29:40+08:00 ] ::1 /YiShuBookPlatform/service/Api/Application/index.php/Home/friend/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+ERR: 无法加载模块:Application
+
+[ 2018-01-02T15:37:39+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads//2018-01-02/5a4ad9367178a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T15:38:02+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads//2018-01-02/5a4ad9367178a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T15:41:09+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads//2018-01-02/5a4ad9367178a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T15:41:14+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads//2018-01-02/5a4ad9367178a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T15:42:09+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads//2018-01-02/5a4ad9367178a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T15:43:54+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads//2018-01-02/5a4ad9367178a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T15:44:03+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads//2018-01-02/5a4ad9367178a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001349s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T15:48:38+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploads/morentouxiang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+ERR: 无法加载模块:Uploads
+
+[ 2018-01-02T16:37:16+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:37:16+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:39:06+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:39:06+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:39:14+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:39:14+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:42:00+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000957s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:42:00+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:42:00+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:42:47+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:42:47+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:42:47+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:42:55+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:42:55+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:42:55+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:43:51+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:44:04+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:44:04+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T16:44:04+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+ERR: 无法加载模块:Public
+
+
+[ 2018-01-02T17:45:42+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploadsactivity1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+ERR: 无法加载模块:Uploadsactivity1
+
+[ 2018-01-02T17:45:42+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploadsactivity2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+ERR: 无法加载模块:Uploadsactivity2
+
+[ 2018-01-02T17:57:39+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploadsactivity1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+ERR: 无法加载模块:Uploadsactivity1
+
+[ 2018-01-02T17:57:39+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploadsactivity2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+ERR: 无法加载模块:Uploadsactivity2
+
+[ 2018-01-02T18:00:19+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001224s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:00:19+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:47:37+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:47:37+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:47:39+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:47:39+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:47:40+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:47:40+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:47:40+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001188s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:48:01+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001507s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:48:01+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:48:07+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:48:07+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:53:34+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploadsactivity1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载模块:Uploadsactivity1
+
+[ 2018-01-02T18:53:34+08:00 ] ::1 /YiShuBookPlatform/service/Api/Uploadsactivity2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+ERR: 无法加载模块:Uploadsactivity2
+
+[ 2018-01-02T18:55:31+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:55:31+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery.pjax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-02T18:55:31+08:00 ] ::1 /YiShuBookPlatform/service/Api/Public/js/jquery-3.2.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+ERR: 无法加载模块:Public
+

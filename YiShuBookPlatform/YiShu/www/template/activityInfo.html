@@ -1,0 +1,27 @@
+<ion-header-bar class="bar-stable">
+    <button class="button  ion-chevron-left button-clear" ng-click="goback()"></button>
+    <h2 class="title">活动详情</h2>
+</ion-header-bar>
+<ion-content class="activityInfo">
+    <div class="activityImg">
+        <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{activities.activityposter}}">
+    </div>
+    <div class="activityTitle">
+        <h2>— {{activities.activityname}} —</h2>
+    </div>
+    <div class="activityAction card">
+        <div class="item item-body">
+            <p>{{activities.activitycontent}}</p>
+        </div>
+        <div class="item row">
+            <div class="col col-20">
+                <img src="img/lianxi.png">
+            </div>
+            <div class="col col-80">
+                <p>地点：{{activities.activityaddress}}</p>
+                <p>时间：{{activities.activitydate}}</p>
+                <p>{{activities.activitylink}}</p>
+            </div>
+        </div>
+    </div>
+</ion-content>

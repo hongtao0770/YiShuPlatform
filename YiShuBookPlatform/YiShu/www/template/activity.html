@@ -1,0 +1,21 @@
+<ion-header-bar class="bar-stable">
+    <h2 class="title">活动</h2>
+    <button class="button button-icon icon ion-ios-bell-outline"  ng-click="goMyNotice()"></button>
+</ion-header-bar>
+<ion-content lazy-scroll class="activityPage">
+    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+    <div class="list">
+        <div class="item row" ng-repeat="activity in activities" ng-click="goActivityInfo($index)">
+            <div class="col col-40 acImg">
+                <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{activity.activityposter}}">
+            </div>
+            <div class="col col-60 acInfo">
+                <h2>{{activity.activityname}}</h2>
+                <i class="icon ion-location"></i>&nbsp;<i>地点：{{activity.activityaddress}}</i>
+                <p>{{activity.activitycontent}}</p>
+                <p>时间：{{activity.activitydate}}</p>
+                <p class="redInfo">{{activity.activitylink}}</p>
+            </div>
+        </div>
+    </div>
+</ion-content>

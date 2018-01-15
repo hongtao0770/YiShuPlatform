@@ -1,0 +1,853 @@
+/* loginPage */
+.backbutton img{
+    display: block;
+    width: 13%;
+}
+.shareBtn img
+{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+.showBtn i{
+    padding: 0px;
+    font-size: 1.4em;
+}
+
+
+/* loginPage */
+.loginPage div.loginBtn
+{
+    margin-top: 20px
+}
+.loginPage div.secondLoginTitle
+{
+    text-align: center;
+    color: lightgray;
+}
+.loginPage div.regAndFog a.calm{
+    text-align:left;
+}
+.loginPage div.regAndFog a.dark{
+    text-align:right;
+}
+.loginPage div.secondLoginPicture img
+{
+    display: block;
+    width: 100%;
+}
+
+/* registerPage */
+
+.registerPage div.checkTerm img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2px 0 0 0;
+}
+.registerPage div.verify
+{
+    margin-right: 3px;
+}
+
+.registerPage div.checkTerm .col
+{
+    padding: 0;
+}
+.registerPage div.checkTerm i{
+    text-align: right;
+}
+.registerPage .list i.inputText{
+    color: gray;
+    padding: 0 20px 0 2px;
+}
+.registerPage .ion-close-circled
+{
+    padding: 0 5px 0 0;
+}
+
+/* homePage */
+.homePage .item-input-inset{
+    padding-left: 0px;
+}
+.homePage ion-slide{
+    height: 10em;
+}
+.homePage ion-slide div img{
+    width: 100%;
+    height: 100%;
+}
+.homePage ion-slide div{
+
+    height: 100%;
+}
+
+.homePage .list div.col-40 img
+{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+.homePage .list div.col-60 {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.homePage .list div.col-60 h2{
+    font-size: 1em;
+    font-weight: bold;
+}
+.homePage .list div.col-60 div.bookinfo p
+{
+    font-size: 0.8em;
+    color: #0b0b0b;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.homePage .BTitle{
+    background-color: lightyellow;
+}
+.homePage .BTitle img
+{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.homePage .BTitle span
+{
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+.homePage .homePageTJ
+{
+    margin-bottom: -10px;
+}
+.homePage .homePageTJ .title
+{
+    padding: 0;
+    text-align: left;
+}
+.homePage .homePageTJ .title img
+{
+    vertical-align: middle;
+}
+.homePage .homePageTJ .title i
+{
+    margin-left: -8px;
+    vertical-align: middle;
+    color: darkred;
+}
+/*.homePage .Bcontent1 .col-10*/
+ /*{*/
+     /*background-color: orange;*/
+ /*}*/
+.homePage .Bcontent1 .col-20
+{
+    padding: 0;
+}
+.homePage .Bcontent1 .col-20 img
+{
+    width: 40px;
+    height:50px;
+    display: block;
+    padding: 0;
+}
+.homePage .Bcontent1 .col-70
+{
+    margin-top: 8px;
+}
+.homePage .Bcontent1 .col-70 p
+{
+  font-size: 1em;
+}
+.homePage .Bcontent1 .col-10
+{
+    text-align: center;
+
+}
+.homePage .Bcontent1 .col-10 h2
+{
+    font-size: 1.4em;
+    color: white;
+    margin-top: 8px;
+}
+
+/*personSideMenu*/
+.personSideMenu .avater img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin:  0 auto;
+    border: 1px solid #d8d8d8;
+}
+.personSideMenu .light
+{
+    color: #0b0b0b;
+}
+/*bookStorePage*/
+.bookStorePage1 .slide1 ion-slide{
+    height: 8em;
+}
+.bookStorePage1 .slide1 ion-slide div img{
+    width: 100%;
+    height: 100%;
+}
+.bookStorePage1 .slide1 ion-slide div{
+
+    height: 100%;
+}
+.bookStorePage1 .todayPage .title
+{
+    padding: 0;
+}
+.bookStorePage1 .todayPage  .title i
+{
+    color: black;
+    vertical-align: middle;
+}
+.bookStorePage1 .todayPage img
+{
+    color: black;
+    vertical-align: middle;
+}
+.bookStorePage1 .todayPage .item .col-50 img
+{
+    width: 75%;
+    height: 75%;
+    display: block;
+}
+.bookStorePage1 .todayPage .item .col-50 p
+{
+   margin-left: 30px;
+}
+
+.bookStorePage1 .todayPage .item .col-50 .originalPrice
+{
+    margin-left: 20px;
+    text-decoration:line-through;
+    color: gray;
+}
+.bookStorePage1 .allBook .row .col-40 img
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.bookStorePage1 .allBook .row .col-60 i
+{
+    font-size: 1em;
+}
+.bookStorePage1 .allBook .row .col-75 i
+{
+    font-size: 0.5em;
+    color: gray;
+}
+
+.bookStorePage2 .showImg
+{
+    height: 8em;
+}
+
+.bookStorePage2 .showImg img
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.bookStorePage2 .allBook .row .col-40 img
+{
+    width: 90%;
+    height: 90%;
+    display: block;
+}
+
+.bookStorePage2 .allBook .row .col-25
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.bookStorePage2 .allBook .row .col-60 i
+{
+    font-size: 1em;
+}
+.bookStorePage2 .allBook .row .col-75 i
+{
+    font-size: 0.5em;
+    color: gray;
+}
+
+
+
+
+/*forgetInfoPage*/
+.forgetInfoPage div.checkTerm img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2px 0 0 0;
+}
+.forgetInfoPage div.verify
+{
+    margin-right: 3px;
+}
+
+.forgetInfoPage div.checkTerm .col
+{
+    padding: 0;
+}
+.forgetInfoPage div.checkTerm i{
+    text-align: right;
+}
+.forgetInfoPage .list i.inputText{
+    color: gray;
+    padding: 0 20px 0 2px;
+}
+.forgetInfoPage .ion-close-circled
+{
+    padding: 0 5px 0 0;
+}
+
+/*bookInfo_footer*/
+.bookInfo_footer {
+    padding: 0;
+    line-height: 3.2em;
+}
+.bookInfo_footer .price-info
+{
+    padding: 0;
+}
+.bookInfo_footer .price-info strong
+{
+    font-weight: normal;
+    font-size: 1.4em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bookInfo_footer .price-info b
+{
+    color: #ff8600;
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+.bookInfo_footer .price-next
+{
+    padding: 0;
+    color: #fff;
+    font-size: 1.4em;
+    text-align: center;
+}
+.bookInfo .col-40 img
+{
+    width:90%;
+    height:80%;
+    display: block;
+    vertical-align: middle;
+}
+.bookInfo .col-60 h2
+{
+    font-size: 1.3em;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.bookInfo .col-60 img
+{
+    width:  13px;
+    height: 13px;
+    vertical-align: middle;
+}
+.bookInfo .col-60 i
+{
+    font-size: 1em;
+    color: gray;
+    vertical-align: middle;
+}
+.bookInfo .col-60 .list1_2 p
+{
+    font-size: 1em;
+    color: gray;
+}
+.bookInfo .col-60 .list1_2 span
+{
+    font-size: 1.2em;
+
+}
+.bookInfo .col-60 .list1_2
+{
+    margin-left: 20px;
+}
+.bookInfo .list1
+{
+    background-color: gainsboro;
+    border-bottom: 1px solid lightgray;
+}
+.bookInfo .list1 .list1_1
+{
+    width: 130px;
+    margin-left: 20px;
+    border: 1px solid gainsboro;
+
+}
+.bookInfo .list1 .list1_1 .green
+{
+    color: gold;
+}
+.bookInfo .list .content
+{
+
+    padding: 20px;
+    font-size: 1.1em;
+    letter-spacing:2px;
+}
+.bookInfo .list .content h2
+{
+    font-size: 1.3em;
+    font-weight: bold;
+
+}
+.bookInfo .userInfo
+{
+    margin-top: 50px;
+}
+.bookInfo .userInfo .userImg img
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.bookInfo .userInfo .userPhone h2
+{
+    font-size: 1.1em;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+.bookInfo .userInfo .userPhone p
+{
+    font-size: 0.9em;
+    vertical-align: middle;
+}
+
+/*friendCirclePage*/
+.friendCirclePage .common
+{
+    font-size: 0.9em;
+    color: grey;
+}
+.friendCirclePage .content
+{
+    font-size: 1em;
+    color: black;
+}
+.friendCirclePage .dark-bg
+{
+    height: 13em;
+}
+.friendCirclePage .dianzan
+{
+    text-align: center;
+
+}
+.friendCirclePage .dianzan img
+{
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+}
+.friendCirclePage .text-right
+{
+    background-image: url("../img/Fbg.jpg");
+    background-size:100% 100%
+}
+.friendCirclePage .Timg img
+{
+    height: 100px;
+    width: 100px;
+    margin-top: 110px;
+    padding: 1px;
+    border: 3px solid white;
+}
+.friendCirclePage .Timg h2
+{
+    font-size: 1.3em;
+    margin-right: 120px;
+    margin-top: -90px;
+    color: whitesmoke;
+}
+.friendCirclePage .list-inset
+{
+    margin-top: 40px;
+}
+.friendCirclePage .fasongBtn
+{
+    border-radius:25px;
+    margin-right: 10px;
+}
+.friendCirclePage .fasong1
+{
+    border-radius:25px;
+
+}
+
+/*activityPage*/
+/*.activityPage .acImg*/
+/*{*/
+    /*padding: 0;*/
+/*}*/
+.activityPage .acImg img
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.activityPage .acInfo h2
+{
+    font-size: 1.2em;
+}
+.activityPage .acInfo i
+{
+    font-size: 1em;
+}
+.activityPage .acInfo p
+{
+    font-size: 1em;
+}
+.activityPage .acInfo .redInfo
+{
+    font-size: 1em;
+    color: red;
+}
+
+/*ensureOrderPage*/
+.ensureOrderPage .orderInfo p
+{
+    text-align: center;
+}
+.ensureOrderPage .bookName p
+{
+    font-size: 1em;
+}
+.ensureOrderPage .bookPrice p
+{
+    text-align: right;
+}
+.ensureOrderPage .orderPrice .balanced
+{
+    text-align: right;
+    font-size: 2em;
+    margin-top: 20px;
+}
+.ensureOrderPage .orderPrice
+{
+    height: 100px;
+}
+
+/*personCenterPage*/
+.personCenterPage .TImg
+{
+    height: 12em;
+
+}
+.personCenterPage .TImg img
+{
+    width: 80px;
+    height:80px;
+    /*display: block;*/
+    /*border: 2px solid gainsboro;*/
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.personCenterPage .TImg h3
+{
+  margin-top: -65px;
+    margin-left: 120px;
+}
+.personCenterPage .TwoBtn
+{
+    text-align: center;
+}
+.personCenterPage .saveBtn
+{
+    border-radius: 25px;
+}
+.personCenterPage .Money .zhanghu img
+{
+    width: 30px;
+    height: 30px;
+
+    vertical-align: middle;
+}
+.personCenterPage .Money .zhanghu i
+{
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+.personCenterPage .Money .youhui img
+{
+    width: 30px;
+    height: 30px;
+
+    vertical-align: middle;
+}
+.personCenterPage .Money .youhui i
+{
+    font-size: 1em;
+    vertical-align: middle;
+}
+.personCenterPage .mima .gaimi img
+{
+    width: 30px;
+    height: 30px;
+
+    vertical-align: middle;
+}
+.personCenterPage .mima .gaimi i
+{
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+.personCenterPage .head .touxiang img
+{
+    width: 30px;
+    height: 30px;
+
+    vertical-align: middle;
+}
+.personCenterPage .head .touxiang i
+{
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+.personCenterPage .jinru
+{
+    text-align: right;
+}
+.personCenterPage .jinru  p
+{
+    color: gainsboro;
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+/*orderPage*/
+.orderPage .list
+{
+    margin-bottom: 10px;
+}
+.orderPage .orderTitle .title
+{
+    font-size: 0.9em;
+}
+.orderPage .orderTitle .col-50 p
+{
+    font-size: 0.9em;
+    color: red;
+    text-align: right;
+}
+.orderPage .orderContent .col-30 img
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.orderPage .orderContent .col-50 p
+{
+    margin-left: 20px;
+}
+.orderPage .orderContent .col-20 p
+{
+    text-align: right;
+    margin-right: 10px;
+    color: grey;
+    margin-top: 10px;
+
+}
+.orderPage .orderAc
+{
+    text-align: right;
+    padding: 8px;
+}
+.orderPage .orderAc button
+{
+    border-radius: 15px;
+}
+/*myFriendPage*/
+.orderPage .list
+{
+    margin-bottom: 15px;
+}
+.myFriendPage .friend
+{
+    border-width: 0;
+}
+.myFriendPage .friend .col-60 p
+{
+    font-size: 1em;
+}
+.myFriendPage .friend .col-40
+{
+    text-align: right;
+}
+.myFriendPage .friendTime
+ {
+     text-align: right;
+    border-top: 0;
+ }
+.myFriendPage .friendBtn
+{
+    text-align: right;
+}
+.myFriendPage .friendBtn button
+{
+    border-radius: 15px;
+}
+/*.myFriendPage .count*/
+/*{*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+/*aboutUsPage*/
+.aboutUsPage .logo
+{
+    text-align: center;
+}
+.aboutUsPage .logo img
+{
+    height: 6em;
+    margin-top: 60px;
+}
+.aboutUsPage .Info
+ {
+     text-align: center;
+ }
+.aboutUsPage .footer
+{
+    text-align: center;
+
+}
+.aboutUsPage .footer p
+{
+    font-size: 0.9em;
+    color: grey;
+    margin-top: 150px;
+}
+
+/*NoticePage*/
+.NoticePage .messageTitle
+{
+    padding: 0;
+}
+.NoticePage .messageTitle .col-40 i
+{
+    font-size: 1em;
+    color: orange;
+}
+.NoticePage .messageTitle .col-60
+{
+    text-align: right;
+}
+.NoticePage .messageContent
+{
+    border-bottom: 0;
+    padding: 0;
+}
+.NoticePage .messageContent p
+{
+    font-size: 1em;
+    margin-left: 3px;
+}
+.NoticePage .messageContent i
+{
+    font-size: 0.9em;
+    margin-left: 20px;
+}
+.NoticePage .messageTime
+{
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0;
+}
+.NoticePage .messageTime p
+{
+    margin-right: 5px;
+    text-align: right;
+}
+/*activityInfo*/
+.activityInfo .activityImg
+{
+    height: 15em;
+}
+.activityInfo .activityImg img
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.activityInfo  .activityTitle
+{
+    text-align: center;
+    border-bottom: 2px solid gainsboro;
+}
+.activityInfo  .activityTitle h2
+{
+    margin-top: 20px;
+   font-size: 2em;
+    color: orange;
+}
+.activityInfo .activityAction .item-body p
+{
+    margin-top: 0;
+    font-size: 1.1em;
+}
+.activityInfo .activityAction .col-20 img
+{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.activityInfo .youxiu img
+{
+    margin-left: 90px;
+    vertical-align: middle;
+}
+.activityInfo .youxiu i
+{
+    vertical-align: middle;
+    font-size: 1.2em;
+    color: black;
+}
+.activityInfo .box .col-50 img
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+/*recordPage*/
+.recordPage .list
+{
+    margin-bottom: 13px;
+}
+.recordPage .RInfo1 .col-30 p
+{
+    color: orange;
+}
+
+.recordPage .RInfo2
+{
+    text-align: right;
+}
+.recordPage .RInfo2 .Img img
+{
+    display: block;
+    height:60px;
+    width: 60%;
+}
+
+.recordPage .RInfo2 .price i
+{
+    color: red;
+}

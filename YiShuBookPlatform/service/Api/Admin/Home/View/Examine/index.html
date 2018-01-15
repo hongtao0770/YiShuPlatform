@@ -1,0 +1,282 @@
+<include file="Public:header"/>
+<div class="aright">
+    <fieldset class="layui-elem-field layui-field-title" style="margin: 20px 30px 20px 20px;">
+        <legend>审核管理</legend>
+    </fieldset>
+    <div class="layui-tab" lay-filter="demo" style="margin: 20px 30px 20px 20px;">
+        <ul class="layui-tab-title">
+            <li class="layui-this">待审核</li>
+            <li>已审核</li>
+            <li>未通过</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form method="post" class="aform cl">
+                    <table width="100%" style="margin-left: -20px">
+                        <tr>
+                            <th width="5%" align="center">编号</th>
+                            <th width="10%" align="center">二手书书名称</th>
+                            <th width="10%" align="center">价格</th>
+                            <th width="10%" align="center">二手书照片</th>
+                            <th width="20%" align="center">二手书简介</th>
+                            <th width="10%" align="center">二手书类型</th>
+                            <th width="10%" align="center">上传用户</th>
+                            <th width="10%" align="center">审核状态</th>
+                            <th width="15%" align="center">审核操作</th>
+                        </tr>
+                        <volist name="list1" id="vo">
+                            <tr>
+                                <td align="center">{$vo.examineid}</td>
+                                <td align="center">{$vo.bookname}</td>
+                                <td align="center">{$vo.bookprice}</td>
+                                <td align="center">
+                                    <if condition="$vo[bookposter] neq ''">
+                                        <img src="__ROOT__/Uploads{$vo.bookposter}" onclick="img({$vo.examineid});" height="30">
+                                        <else />
+                                        暂无图片
+                                    </if>
+                                </td>
+
+                                <td align="center">{$vo.bookcontent}</td>
+                                <td align="center">{$vo.booktype}</td>
+                                <td align="center">{$vo.phone}--{$vo.nickname}</td>
+                                <td align="center">
+                                    <if condition="$vo['state'] eq 0"><span class="layui-badge layui-bg-orange">待审核</span></if>
+                                </td>
+                                <td align="center">
+                                    <a href="#" onclick="adopt({$vo.examineid})"><img src="__ADMIN__/img/checked.png" style="width: 20px"></a>
+                                    &nbsp;
+                                    <a href="#" onclick="pass({$vo.examineid})"><img src="__ADMIN__/img/cancel.png" style="width: 15px"></a>
+                                    &nbsp;
+                                    <a href="#" onclick="del({$vo.examineid})"><img src="__ADMIN__/img/garbage.png" style="width: 15px"></a>
+                                </td>
+                            </tr>
+                        </volist>
+                    </table>
+                </form>
+                <div class="pages">
+                    {$page}
+                </div>
+            </div>
+            <div class="layui-tab-item">
+                <form method="post" class="aform cl">
+                    <table width="100%" style="margin-left: -20px">
+                        <tr>
+                            <th width="5%" align="center">编号</th>
+                            <th width="10%" align="center">二手书书名称</th>
+                            <th width="10%" align="center">图书价格</th>
+                            <th width="10%" align="center">二手书照片</th>
+                            <th width="20%" align="center">图书简介</th>
+                            <th width="10%" align="center">图书类型</th>
+                            <th width="15%" align="center">上传用户</th>
+                            <th width="10%" align="center">审核状态</th>
+                            <th width="10%" align="center">基本操作</th>
+                        </tr>
+                        <volist name="list2" id="vo2">
+                            <tr>
+                                <td align="center">{$vo2.examineid}</td>
+                                <td align="center">{$vo2.bookname}</td>
+                                <td align="center">{$vo2.bookprice}</td>
+                                <td align="center">
+                                    <if condition="$vo2[bookposter] neq ''">
+                                        <img src="__ROOT__/Uploads{$vo2.bookposter}" onclick="img({$vo2.examineid});" height="30">
+                                        <else />
+                                        暂无图片
+                                    </if>
+                                </td>
+
+                                <td align="center">{$vo2.bookcontent}</td>
+                                <td align="center">{$vo2.booktype}</td>
+                                <td align="center">{$vo2.phone}--{$vo2.nickname}</td>
+                                <td align="center">
+                                    <if condition="$vo2['state'] eq 1"><span class="layui-badge layui-bg-green">审核通过</span></if>
+                                </td>
+                                <td align="center">
+                                    <a href="#" onclick="del({$vo2.examineid})">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                    </table>
+                </form>
+                <div class="pages">
+                    {$page}
+                </div>
+            </div>
+            <div class="layui-tab-item">
+                <form method="post" class="aform cl">
+                    <table width="100%" style="margin-left: -20px">
+                        <tr>
+                            <th width="5%" align="center">编号</th>
+                            <th width="10%" align="center">二手书书名称</th>
+                            <th width="10%" align="center">图书价格</th>
+                            <th width="10%" align="center">二手书照片</th>
+                            <th width="20%" align="center">图书简介</th>
+                            <th width="10%" align="center">图书类型</th>
+                            <th width="15%" align="center">上传用户</th>
+                            <th width="10%" align="center">审核状态</th>
+                            <th width="10%" align="center">基本操作</th>
+                        </tr>
+                        <volist name="list3" id="vo3">
+                            <tr>
+                                <td align="center">{$vo3.examineid}</td>
+                                <td align="center">{$vo3.bookname}</td>
+                                <td align="center">{$vo3.bookprice}</td>
+                                <td align="center">
+                                    <if condition="$vo3[bookposter] neq ''">
+                                        <img src="__ROOT__/Uploads{$vo3.bookposter}" onclick="img({$vo3.examineid});" height="30">
+                                        <else />
+                                        暂无图片
+                                    </if>
+                                </td>
+
+                                <td align="center">{$vo3.bookcontent}</td>
+                                <td align="center">{$vo3.booktype}</td>
+                                <td align="center">{$vo3.phone}--{$vo3.nickname}</td>
+                                <td align="center">
+                                    <if condition="$vo3['state'] eq 2"><span class="layui-badge">未通过</span></if>
+                                </td>
+                                <td align="center">
+                                    <a href="#" onclick="del({$vo3.examineid})">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                    </table>
+                </form>
+                <div class="pages">
+                    {$page}
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+
+    //审核通过
+    function adopt(examineid) {
+//        console.log(examineid);
+        layui.use('layer', function () {
+            var loading = layer.load(2, {
+                shade: [0.2,'#000']
+            });
+
+            $.ajax({
+                url: "{:U('Examine/doexamineT')}",
+                type: 'post',
+                data: {
+                    examineid: examineid
+                },
+                success: function (data, status) {
+                    if (data.code == 200) {
+                        layer.close(loading);
+                        layer.msg(data.msg, {icon: 1, time: 1000}, function () {
+                            location.href = "{:U('Examine/index')}"
+                        });
+                    } else {
+                        layer.close(loading);
+                        layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                    }
+                },
+            });
+        });
+    }
+
+    //审核未通过
+    function pass(examineid) {
+//        console.log(examineid);
+        layui.use('layer', function () {
+            var loading = layer.load(2, {
+                shade: [0.2,'#000']
+            });
+
+            $.ajax({
+                url: "{:U('Examine/doexamineP')}",
+                type: 'post',
+                data: {
+                    examineid: examineid
+                },
+                success: function (data, status) {
+                    if (data.code == 200) {
+                        layer.close(loading);
+                        layer.msg(data.msg, {icon: 5, time: 1000}, function () {
+                            location.href = "{:U('Examine/index')}"
+                        });
+                    } else {
+                        layer.close(loading);
+                        layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                    }
+                },
+            });
+        });
+    }
+
+    function del(examineid) {
+//        console.log(examineid);
+        layui.use('layer', function () {
+            layer.confirm('确定删除本条数据？', {title: '提示'}, function (index) {
+                var loading = layer.load(2, {
+                    shade: [0.2, '#000']
+                });
+
+                $.ajax({
+                    url: "{:U('Examine/delete')}",
+                    type: 'post',
+                    data: {
+                        examineid: examineid
+                    },
+                    success: function (data, status) {
+                        if (data.code == 200) {
+                            layer.close(index);
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 1, time: 1000}, function () {
+                                location.href = "{:U('Examine/index')}"
+                            });
+                        } else {
+                            layer.close(index);
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                        }
+                    },
+                });
+            });
+        });
+    }
+
+    //查看图片
+    function img(id) {
+//        console.log(id);
+        layui.use('layer', function () {
+            //定义全局layer变量
+
+            $.ajax({
+                url:"{:U('Examine/img')}",
+                type:'post',
+                data:{
+                    examineid:id
+                },
+                success:function (data, status) {
+                    var image = "__ROOT__/Uploads"+data.mgs;
+                    console.log(image);
+                    layer.open({
+                        type: 1,
+                        title: false,
+                        closeBtn: 0,
+                        area: '300px',
+                        skin: 'layui-layer-nobg', //没有背景色
+                        shadeClose: true,
+                        content: "<img id='bookimg' src='' style='height: 50%;width: 100%'>"
+                    });
+                    $('#bookimg').attr('src',image);
+                    $('.layui-layer-nobg').css({"margin-top":"-150px"});
+
+                },
+            })
+
+        });
+    }
+</script>
+</html>

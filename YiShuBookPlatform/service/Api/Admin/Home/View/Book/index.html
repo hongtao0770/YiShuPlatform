@@ -1,0 +1,196 @@
+<include file="Public:header"/>
+<div class="aright">
+    <fieldset class="layui-elem-field layui-field-title" style="margin: 20px 30px 20px 20px;">
+        <legend>新书管理</legend>
+    </fieldset>
+
+    <div class="layui-tab" style="margin: 20px 30px 20px 20px;">
+        <ul class="layui-tab-title">
+            <li class="layui-this">新书管理</li>
+            <li>排行榜管理</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <div class="arz cl" style="margin-left: 10px"><a href="{:U('book/add')}"><i class="layui-icon">&#xe608;</i>添加图书</a></div>
+
+                <form method="post" class="aform cl">
+                    <table width="100%"  style="margin-left: -20px">
+                        <tr>
+                            <th width="10%" align="center">图书编号</th>
+                            <th width="20%" align="center">图书名称</th>
+                            <th width="10%" align="center">图书价格</th>
+                            <th width="15%" align="center">图书封面</th>
+                            <th width="10%" align="center">是否打折</th>
+                            <th width="10%" align="center">首页推荐</th>
+                            <th width="10%" align="center">销售量</th>
+                            <th width="15%" align="center">基本操作</th>
+                        </tr>
+                        <volist name="list" id="vo">
+                            <tr>
+                                <td align="center">{$vo.bookid}</td>
+                                <td align="center">《{$vo.bookname}》</td>
+                                <td align="center">￥{$vo.bookprice}</td>
+                                <td align="center">
+                                    <if condition="$vo[bookposter] neq ''">
+                                        <img src="__ROOT__/Uploads{$vo.bookposter}" height="30" onclick="img({$vo.bookid})">
+                                        <else />
+                                        暂无封面
+                                    </if>
+                                </td>
+                                <td align="center">
+                                    <if condition="$vo['booksale'] eq 1"><img src="__ADMIN__/img/sale.png" style="width: 25px">打折</if>
+                                    <if condition="$vo['booksale'] eq 0">不打折</if>
+                                </td>
+                                <td align="center">
+                                    <if condition="$vo['bookshow'] eq 1"><img src="__ADMIN__/img/tuijian.png" style="width: 20px">首页推荐</if>
+                                    <if condition="$vo['bookshow'] eq 0">不推荐</if>
+                                </td>
+                                <td align="center">
+                                    <if condition="$vo['salesnum'] eq null">0本
+                                        <else />
+                                        {$vo.salesnum}本
+                                    </if>
+                                </td>
+                                <td align="center">
+                                    <a href="{:U('book/edit',array('bookid'=>$vo['bookid']))}">修改</a> |
+                                    <a href="#" onclick="del({$vo.bookid})">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                    </table>
+                </form>
+                <div class="pages">
+                    {$page}
+                </div>
+            </div>
+            <div class="layui-tab-item">
+                <div class="arz cl" style="margin-left: 10px"><a href="#" onclick="update()"><i class="layui-icon">&#x1002;</i>更新排行榜</a></div>
+                <form method="post" class="aform cl">
+                    <table width="100%" style="margin-left: -20px">
+                        <tr>
+                            <th width="5%" align="center">图书排行</th>
+                            <th width="10%" align="center">图书封面</th>
+                            <th width="10%" align="center">图书名称</th>
+                        </tr>
+                        <volist name="list2" id="vo2">
+                            <tr>
+                                <td align="center">
+                                    <if condition="$vo2['rank'] eq 1"><span class="layui-badge">1</span></if>
+                                    <if condition="$vo2['rank'] eq 2"><span class="layui-badge layui-bg-orange">2</span></if>
+                                    <if condition="$vo2['rank'] eq 3"><span class="layui-badge layui-bg-orange">3</span></if>
+                                    <if condition="$vo2['rank'] eq 4"><span class="layui-badge layui-bg-green">4</span></if>
+                                    <if condition="$vo2['rank'] eq 5"><span class="layui-badge layui-bg-green">5</span></if>
+                                </td>
+                                <td align="center"><img src="__ROOT__/Uploads/{$vo2.bookposter}"height="30"></td>
+                                <td align="center">《{$vo2.bookname}》</td>
+                            </tr>
+                            </volist>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+<script>
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+    function img(id) {
+//        console.log(id);
+        layui.use('layer', function () {
+            //定义全局layer变量
+
+            $.ajax({
+                url:"{:U('Book/img')}",
+                type:'post',
+                data:{
+                    bookId:id
+                },
+                success:function (data, status) {
+                    var image = "__ROOT__/Uploads"+data.mgs;
+                    console.log(image);
+                    layer.open({
+                        type: 1,
+                        title: false,
+                        closeBtn: 0,
+                        area: '300px',
+                        skin: 'layui-layer-nobg', //没有背景色
+                        shadeClose: true,
+                        content: "<img id='bookimg' src='' style='height: 50%;width: 100%'>"
+                    });
+                    $('#bookimg').attr('src',image);
+                    $('.layui-layer-nobg').css({"margin-top":"-150px"});
+
+                },
+            })
+
+        });
+    }
+    function del(bookid) {
+        layui.use('layer', function () {
+            layer.confirm('确定删除本条数据？', {title: '提示'}, function (index) {
+                var loading = layer.load(2, {
+                    shade: [0.2,'#000']
+                });
+                $.ajax({
+                    url: "{:U('Book/delete')}",
+                    type: 'post',
+                    data: {
+                        bookid: bookid
+                    },
+                    success: function (data, status) {
+                        if (data.code == 200) {
+                            layer.close(index);
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 1, time: 1000}, function () {
+                                location.href = "{:U('Book/index')}"
+                            });
+                        } else {
+                            layer.close(index);
+                            layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                        }
+                    },
+                });
+            });
+        });
+    }
+
+    function update() {
+        layui.use('layer', function () {
+            var loading = layer.load(2, {
+                shade: [0.2,'#000']
+            });
+
+
+            $.ajax({
+                url: "{:U('Book/rank')}",
+                type: 'POST',
+                dataType: 'json',
+                success: function (data, status) {
+                    if (data.code == 200) {
+                        layer.close(loading);
+                        layer.msg(data.msg, {icon: 1, time: 1000}, function () {
+                            location.href = "{:U('Book/index')}";
+                        });
+                        return false;
+                    } else {
+                        layer.close(loading);
+                        layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                    }
+                },
+
+                fail: function (err, status) {
+                    console.log(err)
+                }
+            });
+        });
+    }
+</script>
+</body>
+</html>
+
+
+

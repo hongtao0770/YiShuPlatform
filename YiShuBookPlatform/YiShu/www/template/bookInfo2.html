@@ -1,0 +1,40 @@
+<ion-header-bar class="bar-stable">
+    <button class="button  ion-chevron-left button-clear" ng-click="homePageBack()"></button>
+    <h1 class="title">二手书详情</h1>
+    <button class="button  ion-android-share button-clear"></button>
+</ion-header-bar>
+<ion-content lazy-scroll class="bookInfo">
+    <div class="list">
+        <div class="item row list1">
+            <div class="col col-60" >
+                <h2>{{books.bookname}}</h2>
+                <div class="list1_1">
+                    <img src="img/pingfen.png"><i class="green">7.1</i><i>&nbsp;| 易书图书</i>
+                </div>
+                &nbsp;
+                <div class="list1_2">
+                    <p>{{books.nickname}}</p>
+                    <p>{{books.booktype}}</p>
+
+                    <span class="assertive">￥{{books.bookprice}}</span>
+                </div>
+            </div>
+            <div class="col col-40">
+                <img ng-src="http://localhost:8080/YiShuBookPlatform/service/Api/Uploads/{{books.bookposter}}">
+            </div>
+        </div>
+        <div class="content">
+            <h2>简介：</h2>
+            <p>{{books.bookcontent}}</p>
+        </div>
+    </div>
+
+</ion-content>
+<ion-footer-bar class="bookInfo_footer">
+    <div class="col col-60 price-info">
+        <strong>总价：<b id="total">￥{{books.bookprice}}</b></strong>
+    </div>
+    <div class="col col-40 assertive-bg price-next" ng-click="nextStep()">
+        购买
+    </div>
+</ion-footer-bar>

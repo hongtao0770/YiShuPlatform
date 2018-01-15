@@ -1,0 +1,154 @@
+<include file="Public:header"/>
+<script src="__ADMIN__/js/jquery-1.4.2.min.js"></script>
+<div class="aright">
+    <fieldset class="layui-elem-field layui-field-title" style="margin: 20px 30px 20px 20px;">
+        <legend>管理员邮件</legend>
+    </fieldset>
+
+    <div class="arz cl"><a href="{:U('message/add')}"><i class="layui-icon">&#xe642;</i>发邮件</a></div>
+
+    <form method="post" onsubmit="return false" class="aform cl" id="form1">
+        <table width="100%">
+            <tr>
+                <th width="5%" align="center"><input type="checkbox" name="checkbox" id="selall"/></th>
+                <th width="20%" align="center">邮件</th>
+                <th width="20%" align="center">发件人</th>
+                <th width="20%" align="center">联系电话</th>
+                <th width="20%" align="center">发件时间</th>
+                <th width="20%" align="center">基本操作</th>
+            </tr>
+            <volist name="list" id="vo">
+                <tr>
+                    <td align="center"><input type="checkbox" class="selall deletes" name="deletes[]" value="{$vo.messageid}"></td>
+                    <td align="center"><if condition="$vo[state] eq 0"><img id="img1" src="__ADMIN__/img/youjian.png"></if>
+                        <if condition="$vo[state] eq 1"><img id="img2" src="__ADMIN__/img/邮件(5).png" style="height: 19px;width: 19px"></if>
+                    </td>
+                    <td align="center">{$vo.nickname}</td>
+                    <td align="center">
+                        <if condition="$vo[phone] eq ''">
+                            未填写
+                        <else />
+                        {$vo.phone}
+                            </if></td>
+                    <td align="center">{$vo.messagetime}</td>
+                    <td align="center">
+                        <a href="#" onclick="message({$vo.messageid})">查看</a>
+                        <a href="#" onclick="del({$vo.messageid})">删除</a>
+                    </td>
+                </tr>
+                </volist>
+        </table>
+        <div class="layui-form-item">
+            <div style="margin-top: 20px;">
+                <button style="background-color:#393D49 "  class="layui-btn" onclick="dels('this','{:U('Message/deletes')}')"><i class="layui-icon"></i>删除选中</button>
+            </div>
+        </div>
+    </form>
+    <div class="pages">
+        {$page}
+    </div>
+</div>
+</div>
+<script>
+    function message(x) {
+        layui.use('layer', function () {
+            //定义全局layer变量
+
+            $.ajax({
+                url:"{:U('message/look')}",
+                type:'post',
+                data:{
+                    id:x
+                },
+                success:function (data, status) {
+                    x = data.mgs;
+                    y = data.time;
+                    n = data.name;
+                    $("#img1").attr("src","__ADMIN__/img/邮件(5).png").css({"height":"19px","width":"19px"});
+                    layer.open({
+                        type: 1,
+                        area: ['420px', '240px'], //宽高
+                        content: "<p style='margin-left: 10px;color: cornflowerblue'>"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+x+"</p>"+"<br><p style='text-align: right;margin-right: 10px;margin-top: 70px'>时间："+y+"</p>"+"<br><p style='text-align: right;margin-right: 10px'>用户名："+n
+                    });
+                },
+            })
+
+        });
+    }
+
+    $("#selall").click(function(){
+        if($(this).attr("checked")){
+            $(".selall").attr("checked","checked");
+        }else{
+            $(".selall").removeAttr("checked");
+        }
+
+    })
+
+    function del(messageid) {
+        layui.use('layer', function () {
+            layer.confirm('确定删除本条数据？', {title: '提示'}, function (index) {
+                var loading = layer.load(2, {
+                    shade: [0.2,'#000']
+                });
+                $.ajax({
+                    url: "{:U('Message/delete')}",
+                    type: 'post',
+                    data: {
+                        messageid: messageid
+                    },
+                    success: function (data, status) {
+                        if (data.code == 200) {
+                            layer.close(index);
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 1, time: 1000}, function () {
+                                location.href = "{:U('Message/index')}"
+                            });
+                            return false
+                        } else {
+                            layer.close(index);
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                            return false
+                        }
+                    },
+                });
+            });
+        });
+    }
+
+    function dels(obj, url) {
+        layui.use('layer', function () {
+            var layer = layui.layer;
+            var loading = layer.load(2, {
+                    shade: [0.2,'#000']
+                });
+            layer.confirm('确定批量删除数据？', {title: '提示'}, function (index) {
+                var data = $('.deletes').serialize();
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    data: data,
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data.code == 200) {
+                            layer.close(index);
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 1, time: 1000}, function () {
+                                location.href = "{:U('Message/index')}"
+                            });
+                        } else {
+                            layer.close(index);
+                            layer.close(loading);
+                            layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+                        }
+                    }
+                });
+                layer.close(index);
+            });
+        });
+    }
+</script>
+
+</body>
+</html>

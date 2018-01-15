@@ -1,0 +1,31 @@
+<ion-header-bar class="bar-stable">
+    <h1 class="title">用户登录</h1>
+</ion-header-bar>
+<ion-content  class="loginPage">
+    <div class="list list-inset padding">
+        <div class="item item-input">
+            <i class="icon ion-person placeholder-icon"></i>
+            <input ng-model="$parent.userPhone" type="text" placeholder="手机号">
+        </div>
+        <div class="item item-input">
+            <i class="icon ion-ios-locked placeholder-icon"></i>
+            <input ng-model="$parent.userPassword" id="LoginPasswordId" type="password" placeholder="密码">
+            <i class="icon ion-eye placeholder-icon padding-right" ng-click="showPwd()"></i>
+        </div>
+        <div class="loginBtn">
+            <div class="button button-stable button-block" ng-click="loginBtn()">登录</div>
+        </div>
+        <div class="padding row regAndFog">
+            <a class="col col-30" ng-click="goRegisterBtn()">免费注册</a>
+            <a class="col col-30 col-offset-40 dark" ng-click="goForgetInfoBtn()">忘记密码</a>
+        </div>
+    </div>
+    <div class="secondLoginTitle">
+        <p>~第三方登录~</p>
+    </div>
+    <div class="padding row secondLoginPicture">
+        <a class="col col-20 col-offset-20"><img src="img/QQ@2x.png"></a>
+        <a class="col col-20"><img src="img/weixin@2x.png"></a>
+        <a class="col col-20"><img src="img/weibo@2x.png"></a>
+    </div>
+</ion-content>

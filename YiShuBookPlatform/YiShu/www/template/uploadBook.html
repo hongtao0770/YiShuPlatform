@@ -1,0 +1,37 @@
+<ion-header-bar class="bar-stable">
+    <button class="button  ion-chevron-left button-clear" ng-click="goBack()"></button>
+    <h1 class="title">上传二手书</h1>
+    <div class="buttons">
+        <button class="button button-icon ion-ios-copy-outline" ng-click="goRecord()">
+        </button>
+    </div>
+</ion-header-bar>
+<ion-content class="uploadBookPage">
+    <form enctype="multipart/form-data" id="form2">
+    <div class="list card">
+        <label class="item item-input">
+            <input type="text" placeholder="请输入书名" name="bookname" id="bookname">
+        </label>
+        <label class="item item-input">
+            <input type="text" placeholder="请输入价格" name="bookprice" id="bookprice">
+        </label>
+        <label class="item item-input">
+            <input type="text" placeholder="请输入图书描述" name="bookcontent" id="bookcontent">
+        </label>
+        <label class="item item-input">
+            <input type="text" placeholder="请输入图书种类" name="booktype" id="booktype">
+        </label>
+         <label class="item item-input">
+            <input type="file"  name="bookposter" id="1">
+         </label>
+        <label class="item item-input" style="display: none">
+            <input type="text"  name="userid" value="{{users.userid}}" >
+        </label>
+        <button type="reset" style="display:none;"></button>
+    </div>
+    <div class="padding">
+        <button class="button button-block button-positive" ng-click="tijiao()">提交申请</button>
+    </div>
+    </form>
+</ion-content>
+
